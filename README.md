@@ -1,13 +1,13 @@
 # NumAI for Casio Graph Math+
 
-Revision notes, equation sheets, solvers and a CAS calculator in a native 396 × 224 Casio add-in. Current release: **v0.1.3**.
+Revision notes, equation sheets, solvers and a CAS calculator in a native 396 × 224 Casio add-in. Current release: **v0.1.3-r1**.
 
 Download the .g3a from [Releases](https://github.com/cis5123467-sudo/numai-casio/releases/latest). Copy it to the root of the calculator's USB storage, eject the calculator, then launch NumAI from MPM's TOOLS add-ins menu. The target is **Graph Math+ OS 02.00.2202 with Math+ Mod (MPM)**. Back up your NumAI save files before replacing an existing installation.
 
 ## Revision and solving
 
 - Edexcel IGCSE Mathematics, OCR Level 3 Additional Mathematics and Edexcel A level Mathematics, with worked examples.
-- Separate AQA GCSE Biology, Chemistry and Physics courses, supporting explanations, specification references and Higher-only labels.
+- Separate AQA GCSE Biology, Chemistry and Physics courses, supporting explanations, specification references and Higher-only labels. Chemistry now has 162 cards with 151 individual Key ideas views and a summary for each of its 13 sections; detailed notes include worked calculations, explanations, practical reasoning and common mistakes.
 - Course search by all entered words, course name, reference, topic and note content. Equation search by names, symbols, units, topics and references.
 - Physics and Chemistry equation sheets with variables and units, worked examples, use cases, rearrangements and subject-selecting solvers. Course cards link to related equations; fact sheets link back to the relevant topic.
 - Unit conversion with a NumAI clipboard, formula rearrangement for the supplied Physics equations, a trigonometric equation solver and a triangle solver.
@@ -23,6 +23,7 @@ Download the .g3a from [Releases](https://github.com/cis5123467-sudo/numai-casio
 | TOOLS | Equations and CAS; press again in equation menus to search |
 | SHIFT + EXE | General NumAI menu |
 | SETTINGS | Preferences |
+| OK / EXE on Chemistry notes | Toggle Key ideas and full notes; BACK from Key ideas returns to notes |
 | VARIABLE | Letter case, variables with stored values, and symbols |
 | VARIABLE, RIGHT | Jump directly to symbols such as factorial !, =, >, < and _ |
 | ALPHA + a red-letter key | Enter the letter printed on that physical key |
@@ -67,7 +68,7 @@ Install Python 3, the packages in requirements-dev.txt, SH GCC and a Math+-aware
     python3 -m pip install -r requirements-dev.txt
     python3 tools/build.py
 
-The result is release/numai-0.1.3.g3a. Build output goes to build/. The installed fxsdk command supplies include/library paths. The toolchain must provide fxconv, fxgxa, sh-elf-gcc, libgint-cg, fxlibc, OpenLibm and the colour linker script.
+The build regenerates the Chemistry catalogue from the pinned NumWorks v0.1.2-r1 source and the original additions in data/chemistry_revision.json. The result is release/numai-0.1.3-r1.g3a. Build output goes to build/. The installed fxsdk command supplies include/library paths. The toolchain must provide fxconv, fxgxa, sh-elf-gcc, libgint-cg, fxlibc, OpenLibm and the colour linker script.
 
 This release used SH GCC 15.2.0, fxSDK dev a6e46eb6, gint dev 463f180f, fxlibc dev b96335c2 and OpenLibm 9828d2e3. The existing Math+-aware toolchain includes its established startup adaptation. NumAI additionally normalises physical event positions for all five upper keyboard rows, correcting older gint event translations that cover only three rows. Both held and newly pressed keys consequently select the same app action.
 
@@ -76,16 +77,18 @@ This release used SH GCC 15.2.0, fxSDK dev a6e46eb6, gint dev 463f180f, fxlibc d
     export CASIO_EMULATOR=/path/to/emucasiocalc
     python3 tools/check_artifact.py
     python3 tools/native_controls.py
+    python3 tools/native_controls.py chemistry_content
+    python3 tools/chemistry_screens.py
     python3 tools/smoke.py
     python3 tools/math_screens.py
-    python3 tools/check_mpm.py /path/to/mpm-v1.1 release/numai-0.1.3.g3a
+    python3 tools/check_mpm.py /path/to/mpm-v1.1 release/numai-0.1.3-r1.g3a
 
 The native-controls host test requires a C compiler and the gint headers at CASIO_SDK's include path. The emulator scripts run the actual release G3A in emuCasioCalc's fx-CG50 model and save screenshots/logs to verification/. The original MPM C metadata/discovery functions are compiled by the MPM check. The historical save fixture contains a synthetic 5×5 calculation.
 
-See [validation](docs/validation.md) and [release notes](RELEASE_NOTES.md). Emulator and packaging checks do not establish physical Graph Math+ compatibility. Physical testing of v0.1.3 is pending.
+See [validation](docs/validation-0.1.3-r1.md) and [release notes](RELEASE_NOTES.md). Emulator and packaging checks do not establish physical Graph Math+ compatibility. Physical testing of v0.1.3-r1 is pending.
 
 ## Source and acknowledgements
 
-Course content, search and solver History are ported from NumAI's NumWorks v0.1.2 source, commit c22d43b7fd1d408e2bb257a3c1cd7f679ebd743d. The seven shared content/catalogue files retain their verified byte-identical content. Casio rendering, input, packaging and save storage are adapted for this port.
+The original course content, search and solver History came from NumWorks v0.1.2. This revision imports the Chemistry and header changes from NumWorks v0.1.2-r1, commit 96245a14873751dc4484102dff67cdc768c4ac1e, then expands every Chemistry card. Independent comparison tests preserve every upstream Chemistry note and keep Biology/Physics catalogue content unchanged. Casio rendering, controls, packaging and USB saves remain native to this port. See [Chemistry research and coverage](docs/chemistry-research.md).
 
 Native fonts and rendering APIs come from gint by Lephenixnoir and contributors. Its upstream permission statement is preserved in vendor/gint/UPSTREAM-README.md. The bundled fxlibc printf implementation is CC0, with its license in vendor/fxlibc/LICENSE. Other toolchain components are installed dependencies rather than vendored source.

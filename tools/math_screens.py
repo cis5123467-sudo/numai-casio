@@ -13,7 +13,7 @@ cases = ['3*(1/2+2)*4','2((1+2))*3','1/2+3/4','(1+2)/(3+4)', '1/(1+1/2)',
          '(2+3)^2','2^(-3)','2^(1/2)','2^(3^2)','(1/2)^2','sqrt(2)+2*pi','sqrt(1/2)',
          '(3+4)*(5-2)','2*3*4','1/3','(1+2)^(-2/3)','(2^3)^2','(1/2)^(3/4)','(1/(2+3))^(-2)',
          '1/2^2','2^(-1/2)+3','(1/2)^(-2)','2^(123/456)','(12/345)^(67/89)']
-base = root / 'verification/math-v0.1.3'
+base = root / 'verification/math-v0.1.3-r1'
 base.mkdir(parents=True,exist_ok=True)
 def run(item):
     i, expression = item
@@ -26,7 +26,7 @@ def run(item):
     for ch in expression:
         script += ('ALPHA, ' + letters[ch] if ch.isalpha() else keys.get(ch,ch)) + ', '
     script += 'wait 0.5s, shot input.png, EXE, wait 0.5s, shot result.png, MENU'
-    p = subprocess.run([emulator,'--headless','--model','cg50','--keys',script,root/'release/numai-0.1.3.g3a'],cwd=folder,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=90)
+    p = subprocess.run([emulator,'--headless','--model','cg50','--keys',script,root/'release/numai-0.1.3-r1.g3a'],cwd=folder,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=90)
     (folder/'run.log').write_text(p.stdout)
     assert p.returncode == 0 and 'add-in exited after' in p.stdout and 'stopped with an error' not in p.stdout,p.stdout
     assert Image.open(folder/'result.png').size == (396,224)

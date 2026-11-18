@@ -1,13 +1,13 @@
 #include "topics.h"
 #include "maths_details.inc"
 
-#define N(detail,t,n,m,e) {t,n,m,e,Calculate,0,{0},{0},&detail}
-#define C(detail,t,n,m,o,l,v) {t,n,m,0,o,0,{l},{v},&detail}
-#define D(detail,t,n,m,v,a,b) {t,n,m,0,Definite,0,{"Integrand f(x)","Lower limit","Upper limit"},{v,a,b},&detail}
-#define F1(detail,t,n,m,f,l1,v1) {t,n,m,0,Calculate,f,{l1},{v1},&detail}
-#define F2(detail,t,n,m,f,l1,v1,l2,v2) {t,n,m,0,Calculate,f,{l1,l2},{v1,v2},&detail}
-#define F3(detail,t,n,m,f,l1,v1,l2,v2,l3,v3) {t,n,m,0,Calculate,f,{l1,l2,l3},{v1,v2,v3},&detail}
-#define F4(detail,t,n,m,f,l1,v1,l2,v2,l3,v3,l4,v4) {t,n,m,0,Calculate,f,{l1,l2,l3,l4},{v1,v2,v3,v4},&detail}
+#define N(detail,t,n,m,e) {t,n,m,e,Calculate,0,{0},{0},&detail,0}
+#define C(detail,t,n,m,o,l,v) {t,n,m,0,o,0,{l},{v},&detail,0}
+#define D(detail,t,n,m,v,a,b) {t,n,m,0,Definite,0,{"Integrand f(x)","Lower limit","Upper limit"},{v,a,b},&detail,0}
+#define F1(detail,t,n,m,f,l1,v1) {t,n,m,0,Calculate,f,{l1},{v1},&detail,0}
+#define F2(detail,t,n,m,f,l1,v1,l2,v2) {t,n,m,0,Calculate,f,{l1,l2},{v1,v2},&detail,0}
+#define F3(detail,t,n,m,f,l1,v1,l2,v2,l3,v3) {t,n,m,0,Calculate,f,{l1,l2,l3},{v1,v2,v3},&detail,0}
+#define F4(detail,t,n,m,f,l1,v1,l2,v2,l3,v3,l4,v4) {t,n,m,0,Calculate,f,{l1,l2,l3,l4},{v1,v2,v3,v4},&detail,0}
 #define COUNT(a) ((int)(sizeof(a)/sizeof(*(a))))
 #define CH(t,a) {t,a,COUNT(a)}
 
@@ -35,7 +35,7 @@ static const Topic ig_algebra[] = {
 static const Topic ig_graphs[] = {
     F3(ig_graphs_1, "Sequences and nth term","An arithmetic sequence has constant first difference d. Constant second differences indicate a quadratic sequence.","Use term n = a + (n-1)d. For a quadratic sequence, halve the second difference for the coefficient of n^2.","$1+($3-1)*$2","First term a","5","Difference d","3","Term number n","12"),
     N(ig_graphs_2, "Functions and inverses","f(x) names a function value. A composite applies the inner function first.","For an inverse, write y=f(x), rearrange for x, swap x and y and check the domain.","f(x)=3x-2, g(x)=x^2.\nf(g(4))=3(16)-2=46.\nIf y=3x-2 then x=(y+2)/3.\nThe inverse maps x to (x+2)/3."),
-    {"Graphs and coordinates","A gradient is change in y over change in x. The gradient of a distance-time graph is speed.","Make a table of values, locate intercepts, and use the scale. A graph intersection solves both equations.",0,Substitute,0,{"Function y=f(x)","Value of x"},{"x^2-4x+3","2"},&ig_graphs_3},
+    {"Graphs and coordinates","A gradient is change in y over change in x. The gradient of a distance-time graph is speed.","Make a table of values, locate intercepts, and use the scale. A graph intersection solves both equations.",0,Substitute,0,{"Function y=f(x)","Value of x"},{"x^2-4x+3","2"},&ig_graphs_3,0},
     C(ig_graphs_4, "Differentiation and turning points","The derivative gives gradient. Stationary points occur where f'(x)=0.","Apply the power rule. Solve f'(x)=0 and check the sign change on either side.",Differentiate,"Polynomial f(x)","x^3-6x^2+9x")
 };
 

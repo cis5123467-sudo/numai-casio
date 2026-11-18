@@ -53,8 +53,8 @@ static void refresh_search(void) {
                     const Topic *item = &chapter->topics[k];
                     const char *texts[] = {courses[i].title, courses[i].code, chapter->title,
                                            item->title, item->course, item->method,
-                                           item->detail ? item->detail->notes : item->example};
-                    if (matches_query(texts, 7)) add_search_match((SearchMatch){i,j,k,false,false});
+                                           item->detail ? item->detail->notes : item->example, item->key_ideas};
+                    if (matches_query(texts, 8)) add_search_match((SearchMatch){i,j,k,false,false});
                 }
             }
         return;
@@ -110,7 +110,7 @@ static bool reading_is_topic(void) {
     if (page != Reading) return false;
     const Topic *item = topic();
     return read_content == item->course || (item->detail && read_content == item->detail->notes) ||
-           read_content == item->method;
+           read_content == item->method || (item->key_ideas && read_content == item->key_ideas);
 }
 
 static void find_related(void) {
@@ -161,7 +161,7 @@ static void wrap_topic_reading(void) {
             wrap("\n", TEXT_WIDTH, false, &read_length);
             wrap(notes, TEXT_WIDTH, false, &read_length);
         } else wrap(read_content, TEXT_WIDTH, false, &read_length);
-        if (item->example && !item->method) wrap(item->example, TEXT_WIDTH, false, &read_length);
+        if (item->example && !item->method && read_content != item->key_ideas) wrap(item->example, TEXT_WIDTH, false, &read_length);
     } else {
         if (related_count) {
             wrap("Related formulas (TOOLS)", TEXT_WIDTH, true, &read_length);

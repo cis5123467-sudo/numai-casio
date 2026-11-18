@@ -205,7 +205,11 @@ static int styled_text(int x, int y, const char *text, eadk_color_t ink, eadk_co
         "mass", "charge", "force", "momentum", "density", "pressure", "half-life",
         "magnetic field", "induction", "infrared", "redshift", "ionic", "covalent",
         "delocalised", "ions", "electrolysis", "oxidation", "reduction", "precipitate",
-        "chromatography", "functional group", "hydrocarbons", "polymers", "yield"
+        "chromatography", "functional group", "hydrocarbons", "polymers", "yield",
+        "cathode", "anode", "salt", "hydrogen", "oxygen", "carbon dioxide",
+        "reactivity", "displacement", "neutralisation", "alkali", "base", "acid",
+        "Detailed explanation and examples", "OIL RIG", "ionises", "concordant", "titration", "filtrate", "crystals",
+        "cryolite", "halide", "higher only", "Key Ideas", "Oxidation Is Loss", "Reduction Is Gain"
     };
     const char *at = text;
     while (*at && x < EADK_SCREEN_WIDTH) {
@@ -327,7 +331,7 @@ static void home_header(void) {
     rectangle(0, 0, EADK_SCREEN_WIDTH, 21, Gold);
     string_at(6, 3, degrees ? "deg" : "rad", White, Gold);
     string_at(38, 3, modifier_text(), White, Gold);
-    string_at((EADK_SCREEN_WIDTH - casio_width("NUMAI",-1,false,false))/2, 3, "NUMAI", White, Gold);
+    string_at((EADK_SCREEN_WIDTH - casio_width("CALCULATION",-1,false,false))/2, 3, "CALCULATION", White, Gold);
 }
 
 static void footer(const char *label) {
@@ -701,6 +705,7 @@ static const struct { const char *key; const char *function; } shortcuts[] = {
     {"TOOLS", "Open Equations and CAS"},
     {"SHIFT+EXE", "Open or close NumAI menu"},
     {"OK / EXE", "Open item or calculate"},
+    {"OK (Chem notes)", "Toggle Key ideas / full notes"},
     {"UP / DOWN", "Move, scroll or change field"},
     {"BACK / HOME", "Go back / return to launcher"},
     {"x/\030/T", "Enter x; ALPHA enters A"},
@@ -983,6 +988,13 @@ static void draw_tool(void) {
 #include "calculator_view.inc"
 
 static void draw(void) {
+    static Page last_page = About;
+    static const char *last_content;
+    static const Topic *last_topic;
+    bool reuse_read_layout = page == Reading && last_page == Reading &&
+                             read_content == last_content && topic() == last_topic && read_length > 0;
+    last_page = page;
+    if (page == Reading) { last_content = read_content; last_topic = topic(); }
     eadk_display_push_rect_uniform(eadk_screen_rect, White);
     switch (page) {
         case Prompt:
@@ -1070,9 +1082,15 @@ static void draw(void) {
             break;
         case Reading:
             header(read_title, NULL, false);
-            read_length = 0;
-            wrap_topic_reading();
+            if (!reuse_read_layout) {
+                read_length = 0;
+                wrap_topic_reading();
+            }
             reader(30, FOOTER - 3);
+            if (reading_is_topic() && topic()->key_ideas) {
+                footer(read_content == topic()->key_ideas ? "OK: full notes   TOOLS: equations   BACK" : "OK: Key ideas    TOOLS: equations   BACK");
+                break;
+            }
             footer(reading_is_topic() && related_count ? "TOOLS: related equations   UP/DOWN   BACK" :
                    "UP/DOWN: scroll    BACK: return");
             break;
@@ -1547,7 +1565,11 @@ static void back(void) {
         case CalcExtras: page = CalcHistory; break;
         case Shortcuts: case History: page = GeneralMenu; break;
         case HistoryResult: page = History; break;
-        case Reading: page = reading_parent; break;
+        case Reading:
+            if (reading_is_topic() && topic()->key_ideas && read_content == topic()->key_ideas) {
+                read_content = topic()->course; read_offset = 0;
+            } else page = reading_parent;
+            break;
         case Search: page = search_parent; break;
         case RelatedEquations:
             page = related_parent;
@@ -2259,6 +2281,12 @@ static bool handle_key(int key, bool shifted, bool alphabetic) {
             int *offset = page == ToolOutput ? &tool_offset : &history_offset;
             *offset += key == eadk_key_up ? -1 : 1;
         }
+        return true;
+    }
+    if (page == Reading && reading_is_topic() && topic()->key_ideas &&
+        (key == eadk_key_ok || key == eadk_key_exe) && !function && !alphabetic) {
+        read_content = read_content == topic()->key_ideas ? topic()->course : topic()->key_ideas;
+        read_offset = 0;
         return true;
     }
     if (page == Reading || page == Result) {

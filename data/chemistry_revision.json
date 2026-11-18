@@ -1,0 +1,1881 @@
+{
+  "chem_atoms": {
+    "key_ideas": [
+      "Atoms keep their identity during chemical reactions; balanced equations conserve each element.",
+      "An element has one atomic number; a compound has a fixed formula; a mixture has no fixed ratio.",
+      "Separate mixtures using differences in solubility, boiling point or attraction to phases.",
+      "Models change when observations cannot be explained by the old model.",
+      "Atomic number counts protons; mass number counts protons plus neutrons.",
+      "Isotopes differ in neutrons; an ion differs from its neutral atom in electron number.",
+      "Calculate relative atomic mass as an abundance-weighted average.",
+      "For the first 20 elements, fill shells 2,8,8 before the fourth shell.",
+      "Period gives occupied shells; main-group elements in a group share outer-electron patterns.",
+      "Explain Group 1 and Group 7 trends using shell number, shielding and attraction.",
+      "Transition metals often form coloured compounds and work as catalysts.",
+      "Higher only: ionic and half equations must balance both charge and atoms."
+    ],
+    "topics": {
+      "Atoms, elements and compounds": {
+        "ideas": [
+          "Chemical reactions rearrange atoms, not nuclei.",
+          "Coefficients count particles or formula units; subscripts define a substance."
+        ],
+        "notes": [
+          "Writing formulae: the formula of water is H2O, so each molecule contains two hydrogen atoms and one oxygen atom. A coefficient of 3 means three whole molecules, giving six H atoms and three O atoms.",
+          "Balancing example: start Mg + O2 -> MgO. Put 2 before MgO, then 2 before Mg: 2Mg + O2 -> 2MgO. There are two Mg and two O atoms on each side.",
+          "Do not change H2O to H2O2 to balance oxygen: that creates a different compound. Use the periodic table for symbols and distinguish an element symbol from a formula."
+        ]
+      },
+      "Ionic and half equations": {
+        "ideas": [
+          "Higher only: remove spectator ions from ionic equations.",
+          "Higher only: charge and atom totals agree on both sides of a half equation."
+        ],
+        "notes": [
+          "Write the full equation with aqueous ions separated, then cancel ions whose formula and charge are unchanged. For AgNO3(aq) + NaCl(aq), Na+ and NO3- are spectators; Ag+ + Cl- -> AgCl(s) is the net change.",
+          "A reduction half equation puts electrons on the left: Cu2+ + 2e- -> Cu. An oxidation half equation puts them on the right: Mg -> Mg2+ + 2e-.",
+          "Check atoms first, then total electrical charge. Multiply half equations until electron numbers cancel before adding them. Electrons must not remain in the overall equation."
+        ]
+      },
+      "Mixtures and separation": {
+        "ideas": [
+          "Choose a method from a physical-property difference.",
+          "Dissolved solids pass through filter paper; insoluble solids remain as residue."
+        ],
+        "notes": [
+          "For sand mixed with salt, add water to dissolve the salt, stir, filter off the sand, then partially evaporate the filtrate and cool it to crystallise salt. Wash and dry the insoluble residue if it is the desired product.",
+          "Simple distillation collects a solvent: boil the solution, cool the vapour in a condenser and collect the distillate. The dissolved solid stays behind.",
+          "Fractional distillation separates miscible liquids with different boiling points through repeated evaporation and condensation. Put a thermometer at the vapour exit rather than in the heated liquid. Physical separation makes no new chemical substance."
+        ]
+      },
+      "Development of atomic models": {
+        "ideas": [
+          "Scattering observations support a small, dense, positive nucleus.",
+          "A model is revised when new evidence disagrees with its predictions."
+        ],
+        "notes": [
+          "Thomson placed electrons inside a spread-out positive sphere. In the alpha-scattering experiment, most particles passed through the foil, some were deflected and a very small number came back.",
+          "Most particles passing through implies mostly empty space. Large deflections require concentrated positive charge; the rare backscattering supports a tiny dense nucleus containing most of the mass.",
+          "Bohr introduced fixed electron energy levels. Chadwick supplied evidence for neutrons. Explain the observation and inference as a pair rather than just listing scientists; detailed experimental work for Bohr and Chadwick is not required."
+        ]
+      },
+      "Subatomic charges": {
+        "ideas": [
+          "Proton: +1; neutron: 0; electron: -1.",
+          "Neutral atoms have equal numbers of protons and electrons."
+        ],
+        "notes": [
+          "The nucleus contains protons and neutrons, while electrons occupy surrounding energy levels. Relative masses are about 1 for a proton, 1 for a neutron and very small for an electron.",
+          "An atom with 11 protons must have 11 electrons if neutral. Its ion Na+ still has 11 protons but only 10 electrons. Losing a negative electron gives a positive ion.",
+          "Changing the proton number changes the element. Ordinary reactions change bonds and electron arrangements, so they do not turn one element into another. Do not confuse positive ion charge with gaining positive protons."
+        ]
+      },
+      "Atomic size, mass and isotopes": {
+        "ideas": [
+          "Neutrons = mass number - atomic number.",
+          "Isotopes have the same proton number and different neutron numbers."
+        ],
+        "notes": [
+          "For chlorine-37 with atomic number 17: protons=17, neutrons=37-17=20, and electrons=17 in the neutral atom. A chloride ion has 18 electrons but the same nucleus.",
+          "A typical atomic radius is about 1*10^-10 m, whereas the nucleus has a radius below about 1*10^-14 m. Almost all mass is concentrated in the nucleus, even though it occupies very little of the atom.",
+          "Isotopes have similar chemical reactions because neutral atoms of each isotope have the same electron arrangement. Mass number is a whole-number nucleon count; relative atomic mass can be a decimal average."
+        ]
+      },
+      "Relative atomic mass": {
+        "ideas": [
+          "Multiply each isotope mass by its abundance, then divide by the total abundance.",
+          "Relative atomic mass has no unit."
+        ],
+        "notes": [
+          "Worked example: an element has 80% isotope-10 and 20% isotope-11. Ar=(10*80+11*20)/100=10.2. Check that the average lies between 10 and 11 and is nearer the more abundant isotope.",
+          "If abundances are ratios rather than percentages, use the sum of the ratio parts as the denominator. For mass-35 and mass-37 in a 3:1 ratio, Ar=(35*3+37*1)/4=35.5.",
+          "Use the Ar values supplied in the exam periodic table for later calculations. Do not average the isotope masses without weighting unless their abundances are equal."
+        ]
+      },
+      "Electron arrangements": {
+        "ideas": [
+          "Fill lower energy levels before higher levels.",
+          "For the first 20 elements, use 2,8,8 and then the fourth shell."
+        ],
+        "notes": [
+          "Examples: carbon is 2,4; sodium is 2,8,1; chlorine is 2,8,7; calcium is 2,8,8,2. In a neutral atom the sum of shell numbers must equal the atomic number.",
+          "Dot-and-cross diagrams show electrons, not protons. Use the nucleus symbol and correct shell occupancies; outer electrons are especially useful for explaining bonding.",
+          "When sodium forms Na+, it loses its outer electron and becomes 2,8. Chlorine gains one electron to become Cl-, with 2,8,8. Both retain their original proton numbers."
+        ]
+      },
+      "Periodic table structure": {
+        "ideas": [
+          "Increasing atomic number orders the modern table.",
+          "Main-group similarities follow from outer electrons."
+        ],
+        "notes": [
+          "For a main-group atom, the period indicates the number of occupied shells. Sodium is in period 3 because 2,8,1 uses three shells; its one outer electron places it in Group 1.",
+          "Elements in the same main group have similar reactions because they lose, gain or share similar numbers of electrons. Across a period, proton number increases and electrons fill the same main shell.",
+          "Do not apply the simple main-group outer-electron rule indiscriminately to transition metals. Group 0 has a full outer shell; helium has two outer electrons, while neon and argon have eight."
+        ]
+      },
+      "Development of the periodic table": {
+        "ideas": [
+          "Mendeleev used repeating properties as well as atomic weights.",
+          "Successful predictions supported the pattern he proposed."
+        ],
+        "notes": [
+          "Early tables arranged elements by atomic weight but were incomplete and could place unlike elements together. Mendeleev left gaps for undiscovered elements and sometimes reversed the weight order to keep chemically similar elements in groups.",
+          "He predicted properties of missing elements; later discoveries close to these predictions supported the table. The modern ordering uses proton number, which resolves apparent atomic-weight anomalies.",
+          "For an evaluation question, distinguish a prediction made before discovery from a fit adjusted afterwards. Isotopes explain why average atomic weight does not always increase in exactly the same order as atomic number."
+        ]
+      },
+      "Metals and non-metals": {
+        "ideas": [
+          "Metals usually lose electrons to form positive ions.",
+          "Non-metals often gain electrons in ionic compounds or share electrons in molecules."
+        ],
+        "notes": [
+          "Metals generally lie to the left and centre of the table; non-metals lie to the right. Typical metals conduct electricity and heat and are malleable; many non-metals do not conduct, although graphite is an important exception.",
+          "A metal with a nearly empty outer shell can lose outer electrons. A non-metal near the end of a period may gain electrons to complete a shell when it forms an ionic compound.",
+          "Predict a typical property using position, then justify it with structure or electrons. Avoid treating every physical trend as absolute: mercury is a liquid metal and carbon can have very different structures."
+        ]
+      },
+      "Group 0 noble gases": {
+        "ideas": [
+          "A full outer shell makes noble gases very unreactive.",
+          "Boiling points increase down Group 0."
+        ],
+        "notes": [
+          "Noble gases exist as individual atoms rather than diatomic molecules. Helium has one full shell containing two electrons; other familiar noble gases have eight outer electrons.",
+          "Down the group, atoms become larger and intermolecular attractions between atoms become stronger. More energy is needed to separate them, so boiling points rise.",
+          "Their low reactivity is useful when an inert atmosphere is required. Explain a boiling-point trend using attraction between atoms, not stronger covalent bonds: these gases are monatomic and have no molecular covalent bonds to break."
+        ]
+      },
+      "Group 1 alkali metals": {
+        "ideas": [
+          "Each atom loses one outer electron and forms a +1 ion.",
+          "Reactivity increases down Group 1."
+        ],
+        "notes": [
+          "Lithium, sodium and potassium react with water to produce hydrogen and an alkaline metal hydroxide. Example: 2K + 2H2O -> 2KOH + H2. The gas can be confirmed using a lit splint, which gives a squeaky pop.",
+          "Down the group the outer electron is farther from the nucleus and more shielded by inner shells. Attraction to it is weaker, so it is lost more easily despite the larger nuclear charge.",
+          "These metals are soft and have relatively low melting points compared with most metals. Describe observations separately from explanations: floating, movement and gas production are observations, while electron loss explains reactivity."
+        ]
+      },
+      "Group 7 halogens": {
+        "ideas": [
+          "Halogen molecules are diatomic, for example Cl2.",
+          "Reactivity decreases down Group 7; a more reactive halogen displaces a less reactive one."
+        ],
+        "notes": [
+          "At room temperature chlorine is a gas, bromine a liquid and iodine a solid. Melting and boiling points rise down the group because attractions between larger molecules become stronger.",
+          "Each atom needs one extra electron to form a -1 halide ion. Down the group the incoming electron is farther from the nucleus and is more shielded, so attraction is weaker and reactivity decreases.",
+          "Displacement example: Cl2 + 2KBr -> 2KCl + Br2. Chlorine can displace bromide; iodine cannot displace chloride. A halogen molecule and its halide ion are different species with different properties."
+        ]
+      },
+      "Transition metals versus group 1": {
+        "ideas": [
+          "Transition metals tend to be stronger, denser and less reactive than Group 1 metals.",
+          "Compare specified examples rather than claiming that all metals behave identically."
+        ],
+        "notes": [
+          "Iron and copper are typical transition-metal examples: they are useful structural or conducting materials and have higher melting points than lithium, sodium and potassium.",
+          "A Group 1 metal reacts readily with water. Copper does not react with cold water or dilute hydrochloric acid, while iron reacts with suitable dilute acids more slowly than magnesium.",
+          "For comparison answers use paired statements such as sodium is softer than iron, rather than two disconnected lists. Transition metals are generally less reactive with oxygen, water and halogens than Group 1 metals."
+        ]
+      },
+      "Transition-metal properties": {
+        "ideas": [
+          "Many transition metals form ions with different charges and coloured compounds.",
+          "Many transition metals or their compounds act as catalysts."
+        ],
+        "notes": [
+          "Iron can form Fe2+ and Fe3+, whereas familiar Group 1 ions have charge +1. Different oxidation states can lead to different compound formulae and colours.",
+          "Examples of useful catalysts include iron in the Haber process and nickel in hydrogenation. A catalyst increases reaction rate and is regenerated; it is not an additional final product.",
+          "Use oxidation-state names where needed: copper(II) means Cu2+. Do not say that the metal itself must be coloured simply because some of its compounds are coloured."
+        ]
+      }
+    }
+  },
+  "chem_bonds": {
+    "key_ideas": [
+      "Ionic bonding is electrostatic attraction between oppositely charged ions.",
+      "Covalent bonds are shared pairs of electrons; metallic bonding involves delocalised electrons.",
+      "Explain a property by naming the structure, the particles and the forces or bonds involved.",
+      "Melting an ionic compound overcomes attractions in its lattice; melting simple molecules overcomes intermolecular forces.",
+      "A mobile charged particle is needed for electrical conduction.",
+      "An ionic solid has fixed ions, but molten or dissolved ions can move.",
+      "Small covalent molecules usually have low melting points; giant covalent networks usually have very high melting points.",
+      "Metal layers can slide; alloy atoms disrupt the regular layers.",
+      "Diamond has four bonds per carbon; graphite has three and delocalised electrons.",
+      "Graphene is one carbon layer; fullerenes have hollow cage or tube structures.",
+      "A smaller particle size gives a larger surface-area-to-volume ratio.",
+      "Higher only: evaluate limitations of simplified particle diagrams."
+    ],
+    "topics": {
+      "Ionic, covalent and metallic bonds": {
+        "ideas": [
+          "Ionic: metal and non-metal ions attract.",
+          "Covalent: non-metal atoms share electrons; metallic: positive ions attract delocalised electrons."
+        ],
+        "notes": [
+          "First identify the particles in the structure. Sodium chloride contains Na+ and Cl- ions; water contains molecules with covalent O-H bonds; copper contains positive metal ions in delocalised electrons.",
+          "Strong electrostatic attractions act in all three bonding types, but the charged objects differ. A covalent bond attracts the shared electrons to both nuclei.",
+          "Do not use intermolecular forces as a name for the bonding inside a molecule. A property explanation must identify which forces are actually overcome or which charged particles move."
+        ]
+      },
+      "Ion formation": {
+        "ideas": [
+          "Losing electrons gives a positive ion; gaining electrons gives a negative ion.",
+          "Ion charge follows the number of electrons lost or gained."
+        ],
+        "notes": [
+          "A magnesium atom, 2,8,2, loses two outer electrons to form Mg2+, with 2,8. An oxygen atom, 2,6, gains two to form O2-, also with 2,8.",
+          "In a dot-and-cross ionic diagram, show outer electrons, square brackets and the correct charge for each ion. Electrons transferred from the metal remain identifiable by a different symbol.",
+          "A magnesium ion is not a magnesium atom with extra protons. The nucleus is unchanged; changing electron number causes the charge. Group 1 gives +1, Group 2 gives +2, Group 6 often gives -2 and Group 7 gives -1."
+        ]
+      },
+      "Ionic lattices and formulae": {
+        "ideas": [
+          "An ionic formula gives the simplest whole-number ratio with zero total charge.",
+          "The lattice is a repeating three-dimensional arrangement, not a set of discrete molecules."
+        ],
+        "notes": [
+          "To combine Al3+ and O2-, use two aluminium ions and three oxide ions: Al2O3 has total positive charge +6 and total negative charge -6. For Mg2+ and Cl-, the formula is MgCl2.",
+          "Strong attractions act in all directions between opposite ions. A lattice drawing only shows a small part of the giant repeating structure.",
+          "Do not write a charge on the overall neutral formula. Brackets in formulas such as Ca(OH)2 mean two entire hydroxide groups, so there are two oxygen and two hydrogen atoms."
+        ]
+      },
+      "Covalent structures": {
+        "ideas": [
+          "One shared electron pair is a single covalent bond.",
+          "Molecules, polymers and giant networks are different covalent structures."
+        ],
+        "notes": [
+          "H2 has one shared pair, O2 two shared pairs and N2 three. Water has two single bonds around oxygen, with two lone pairs on oxygen. Methane has four single C-H bonds.",
+          "A dot-and-cross diagram tracks outer-shell electrons. A line diagram uses one line per shared pair but usually hides lone pairs. Ball-and-stick models show three-dimensional arrangement more clearly but exaggerate gaps and bond lengths.",
+          "For CO2 use O=C=O. Count all outer electrons and check complete shells where appropriate. Do not assume every covalent substance is a small molecule: diamond is a giant covalent network."
+        ]
+      },
+      "Metallic bonding": {
+        "ideas": [
+          "Positive metal ions are held by attraction to delocalised electrons.",
+          "Delocalised electrons are not tied to one atom."
+        ],
+        "notes": [
+          "Outer electrons become shared throughout the metal lattice. The attraction between these electrons and positive ions extends through the giant structure and needs considerable energy to overcome.",
+          "The model explains conduction because electrons can move and transfer charge. It also allows layers of ions to slide while attraction to the delocalised electrons remains.",
+          "A metal is not held by attractions between positive ions alone: like charges repel. Include the negative delocalised electrons whenever explaining metallic bonding."
+        ]
+      },
+      "Solids, liquids and gases": {
+        "ideas": [
+          "Particle arrangement and movement differ between the three states.",
+          "State changes are physical changes and conserve the substance."
+        ],
+        "notes": [
+          "In a solid, particles vibrate about fixed positions. Liquid particles remain close but can move past each other. Gas particles are far apart and move randomly.",
+          "Heating transfers energy to particles. At melting or boiling, energy changes the arrangement by overcoming relevant attractions; a pure substance can change state at constant temperature.",
+          "A gas is compressible because there are large spaces between its particles. The particles themselves do not expand when heated. Use melting and boiling points to predict state at a specified temperature."
+        ]
+      },
+      "Particle model limitations": {
+        "ideas": [
+          "Higher only: simple sphere diagrams omit important features.",
+          "Use the model for its intended explanation and state what it cannot show."
+        ],
+        "notes": [
+          "Drawings often show particles as identical solid spheres with exaggerated spaces. Real particles may be atoms, ions or molecules and have different sizes and internal structures.",
+          "The elementary state model does not show forces, bond strengths or electrons. It can explain compression qualitatively but cannot by itself explain why different substances have very different melting points.",
+          "An evaluation should link a limitation to the question: a diagram showing no attractions cannot explain the energy required to melt a material. Do not dismiss a useful model merely because it is simplified."
+        ]
+      },
+      "State symbols": {
+        "ideas": [
+          "(s) solid; (l) liquid; (g) gas; (aq) dissolved in water.",
+          "Aqueous is a solution state, not another word for liquid."
+        ],
+        "notes": [
+          "Example: NaCl(s) dissolves to give NaCl(aq). Molten sodium chloride is NaCl(l), where no water is present. This distinction is crucial when predicting electrolysis products.",
+          "A precipitation equation can be written AgNO3(aq) + NaCl(aq) -> AgCl(s) + NaNO3(aq). The solid symbol identifies the insoluble product.",
+          "Write state symbols after a complete formula. Use the stated temperature and conditions; water can be H2O(l) or H2O(g), depending on the process."
+        ]
+      },
+      "Ionic compound properties": {
+        "ideas": [
+          "Strong lattice attractions give high melting points.",
+          "Electrical conduction needs ions that are free to move."
+        ],
+        "notes": [
+          "Sodium chloride has a giant ionic lattice. Many strong attractions must be overcome to melt it, so melting requires much more energy than separating small molecular particles.",
+          "A solid ionic compound does not conduct because ions cannot move through the lattice. When molten, or dissolved if soluble, ions carry charge to the electrodes.",
+          "Do not explain aqueous conduction using free electrons. Electrons move in the wires; ions move in the electrolyte. Not every ionic compound is soluble in water."
+        ]
+      },
+      "Small molecules": {
+        "ideas": [
+          "Strong covalent bonds exist within each molecule.",
+          "Much weaker intermolecular forces act between molecules."
+        ],
+        "notes": [
+          "When a molecular liquid boils, its molecules separate without breaking their internal covalent bonds. Because intermolecular forces require less energy to overcome, small molecular substances often melt and boil at low temperatures.",
+          "Increasing molecular size generally strengthens intermolecular attractions, raising boiling points within a comparable series. The explanation is not that more covalent bonds are broken during boiling.",
+          "Most simple molecular substances do not conduct because there are no mobile ions or delocalised electrons in the pure substance. Distinguish a substance from an aqueous solution that may form ions."
+        ]
+      },
+      "Polymer properties": {
+        "ideas": [
+          "Polymer molecules are very long chains of covalently bonded atoms.",
+          "Many attractions between chains give greater strength than in small molecular substances."
+        ],
+        "notes": [
+          "Each chain has strong covalent bonds along its backbone. Intermolecular forces act between chains, and their combined effect becomes substantial because the chains are long.",
+          "Polymers are usually solids at room temperature, although their flexibility and softening temperature vary with chain structure and intermolecular forces.",
+          "Ordinary polymer structures do not contain mobile ions or delocalised electrons, so they are usually electrical insulators. Do not describe a polymer chain as a giant ionic lattice."
+        ]
+      },
+      "Giant covalent structures": {
+        "ideas": [
+          "Atoms are connected by strong covalent bonds throughout a giant network.",
+          "Many bonds must be broken to melt the structure."
+        ],
+        "notes": [
+          "Diamond, graphite and silicon dioxide are examples of giant covalent structures. Their high melting points follow from the many strong covalent bonds that must be overcome.",
+          "Unlike a small molecular substance, there are no separate molecules held together only by weak intermolecular forces. A formula such as SiO2 states an atom ratio in the network.",
+          "Electrical properties depend on electrons: diamond has no delocalised electrons, while graphite has delocalised electrons. Giant covalent structure alone does not guarantee either conduction or insulation."
+        ]
+      },
+      "Metals and alloys": {
+        "ideas": [
+          "Pure-metal layers can slide, making the metal malleable.",
+          "Different-sized atoms disrupt regular layers in an alloy."
+        ],
+        "notes": [
+          "When a pure metal is bent, layers move without the metallic attraction disappearing. This explains why many metals can be hammered into sheets instead of shattering.",
+          "Adding a different element places atoms of different sizes among the metal atoms. The distorted arrangement makes sliding harder, so an alloy is usually harder than the pure metal.",
+          "For example, steel is generally harder than pure iron. Do not claim the alloy is harder because all individual atoms become stronger; the arrangement and ease of layer movement change."
+        ]
+      },
+      "Metal conductivity": {
+        "ideas": [
+          "Mobile delocalised electrons transfer electrical charge.",
+          "Metals also transfer thermal energy effectively."
+        ],
+        "notes": [
+          "In a complete circuit, delocalised electrons move through the metal. Positive metal ions remain in their lattice positions, so current does not require the whole solid to move.",
+          "Thermal energy is transferred by electron movement and vibrations passing through the lattice. This helps explain metal pans and heat exchangers.",
+          "Use mobile electrons for a metal and mobile ions for a molten salt. The presence of electrons alone is insufficient: electrons tied up in bonds cannot travel through diamond to carry a current."
+        ]
+      },
+      "Diamond": {
+        "ideas": [
+          "Each carbon forms four covalent bonds in a three-dimensional network.",
+          "Diamond is hard and does not conduct electricity."
+        ],
+        "notes": [
+          "The rigid network resists deformation, making diamond suitable for cutting tools. A high melting point arises because many strong covalent bonds must be broken.",
+          "All four outer electrons of each carbon participate in bonding. There are no delocalised electrons to carry electrical charge.",
+          "Do not explain diamond hardness by intermolecular forces: diamond has no separate molecules. Compare with graphite by stating both the number of bonds and the resulting structure."
+        ]
+      },
+      "Graphite": {
+        "ideas": [
+          "Each carbon forms three covalent bonds in a layer.",
+          "Weak attractions between layers allow sliding; delocalised electrons allow conduction."
+        ],
+        "notes": [
+          "Hexagonal rings form sheets. Covalent bonds within a sheet are strong, so graphite has a high melting point even though the layers can slide over each other.",
+          "One outer electron per carbon is delocalised. These electrons carry charge, allowing graphite to work as an electrode. Weak attractions between sheets make it useful as a lubricant or pencil material.",
+          "Avoid saying the bonds within graphite layers are weak. It is the attraction between layers that is relatively weak; covalent bonds within a layer remain strong."
+        ]
+      },
+      "Graphene and fullerenes": {
+        "ideas": [
+          "Graphene is one layer of carbon atoms in a hexagonal arrangement.",
+          "Fullerenes include hollow cages and nanotubes."
+        ],
+        "notes": [
+          "Graphene combines low thickness, high strength and electrical conduction. Each carbon bonds to three others, leaving delocalised electrons that can transfer charge.",
+          "Fullerene cages can hold other molecules, while their large surface area is useful in catalyst-support applications. Carbon nanotubes have high length-to-diameter ratios and can reinforce materials.",
+          "State the structural feature and the useful consequence together. A proposed medical application also needs evidence about delivery, toxicity and removal; a small particle is not automatically safe."
+        ]
+      },
+      "Nanoparticles and surface area": {
+        "ideas": [
+          "A nanoparticle has a size from roughly 1 to 100 nm.",
+          "Reducing particle size increases the surface-area-to-volume ratio."
+        ],
+        "notes": [
+          "For a cube with side length L, surface area=6*L^2 and volume=L^3, so area divided by volume is 6/L. Halving the side length doubles the ratio.",
+          "A larger fraction of the atoms lies at or near the surface. This can make a small mass effective in catalysis, where reactants interact with surface sites.",
+          "Keep length units consistent before squaring or cubing. Nanometres are 10^-9 m; converting a length is different from converting an area or volume."
+        ]
+      },
+      "Uses and risks of nanoparticles": {
+        "ideas": [
+          "Large surface area can give useful properties with a small mass.",
+          "New properties also require evidence about exposure and risk."
+        ],
+        "notes": [
+          "Examples include catalysts, antimicrobial coatings, cosmetics and reinforcement in materials. The relevant benefit may be catalytic surface area, optical behaviour or mechanical strength, depending on the application.",
+          "Very small particles may enter biological tissues or persist in the environment differently from bulk material. Evaluate dose, route of exposure and reliable evidence rather than assuming bulk-material safety applies.",
+          "A balanced conclusion weighs the intended benefit against the identified hazard and the likelihood of exposure. Uncertainty is a reason for further testing, not proof of either safety or harm."
+        ]
+      }
+    }
+  },
+  "chem_amount": {
+    "key_ideas": [
+      "Balance equations before comparing masses or amounts.",
+      "Mr is the sum of all relative atomic masses in a formula and has no unit.",
+      "In a closed system the total mass is conserved, even when gases form.",
+      "Repeats help estimate random uncertainty; they do not remove systematic errors.",
+      "Concentration in g/dm^3 equals solute mass divided by solution volume in dm^3.",
+      "Convert 1000 cm^3 to 1 dm^3; square or cube conversion factors for area or volume.",
+      "Percentage yield compares actual product with theoretical product.",
+      "Atom economy compares desired-product mass with total reactant mass from the equation.",
+      "Higher only: amount in mol = mass in g / molar mass in g/mol.",
+      "Higher only: balanced coefficients give mole ratios and identify a limiting reactant.",
+      "Higher only: amount = concentration in mol/dm^3 * volume in dm^3.",
+      "Higher only: one mole of gas occupies 24 dm^3 at room temperature and pressure."
+    ],
+    "topics": {
+      "Mass conservation and balancing": {
+        "ideas": [
+          "No atoms are made or destroyed during an ordinary chemical reaction.",
+          "Balance each element using coefficients, then check totals."
+        ],
+        "notes": [
+          "Worked example: 2H2 + O2 -> 2H2O. Four H atoms and two O atoms appear on each side. Using Ar(H)=1 and Ar(O)=16, reactant masses 4+32=36 match the 36 mass units of water.",
+          "If an equation is not balanced, any later mass or mole ratio may be wrong. Leave formulas unchanged and adjust only the numbers multiplying complete formulas.",
+          "A gas escaping from an open vessel can make the measured mass fall, but the combined mass of vessel, remaining contents and escaped gas is conserved."
+        ]
+      },
+      "Relative formula mass": {
+        "ideas": [
+          "Count every atom in the full formula, including brackets.",
+          "Mr has no unit; a corresponding molar mass is measured in g/mol."
+        ],
+        "notes": [
+          "Worked example: Mr[Ca(OH)2]=40+2*(16+1)=74. The 2 outside brackets multiplies both oxygen and hydrogen. For Al2(SO4)3, count 2 Al, 3 S and 12 O atoms.",
+          "Mass percentage of an element = total Ar contribution of that element / Mr of compound * 100. Oxygen in CaCO3 contributes 48 out of 100, so it is 48% by mass.",
+          "Do not multiply Mr by a coefficient unless the question needs the mass represented by that many formula units. A balanced coefficient is not part of the chemical formula itself."
+        ]
+      },
+      "Mass changes involving gases": {
+        "ideas": [
+          "An apparent mass loss often means gas escaped from the apparatus.",
+          "An apparent gain can mean oxygen was taken in from air."
+        ],
+        "notes": [
+          "When a carbonate reacts with acid in an open flask, carbon dioxide can leave, lowering the measured flask mass. The lost mass is the mass of escaped gas if no other material is lost.",
+          "Burning magnesium combines it with oxygen. The product mass can exceed the initial magnesium mass because oxygen was added from outside the weighed sample.",
+          "A sealed system would retain every reactant and product, so its total mass would stay constant. Explain the direction of gas transfer rather than saying mass is not conserved."
+        ]
+      },
+      "Chemical measurement uncertainty": {
+        "ideas": [
+          "State uncertainty in the quantity measured, with an appropriate unit.",
+          "Repeated readings reveal spread; a consistent instrument bias needs correction."
+        ],
+        "notes": [
+          "For school repeated measurements, an uncertainty estimate may be half the range: titres 20.10, 20.20 and 20.30 cm^3 have range 0.20 cm^3 and half-range 0.10 cm^3. Use any uncertainty rule supplied by the question.",
+          "Percentage uncertainty = absolute uncertainty / measured value * 100. An uncertainty of 0.05 g on 2.00 g is 2.5%; the same balance uncertainty on 10.00 g is 0.5%.",
+          "Keep sensible significant figures and do not quote more precision than the readings support. Averaging repeated measurements does not repair a balance that always reads too high."
+        ]
+      },
+      "Moles": {
+        "ideas": [
+          "Higher only: a mole contains about 6.02*10^23 specified particles.",
+          "Higher only: n=m/M, using grams and g/mol."
+        ],
+        "notes": [
+          "Worked example: 5.6 g of iron, with molar mass 56 g/mol, is 5.6/56=0.100 mol. This represents 0.100*6.02*10^23=6.02*10^22 iron atoms.",
+          "Specify the particle counted: atoms for Fe, molecules for CO2 or formula units for NaCl. One mole of oxygen molecules O2 contains two moles of oxygen atoms.",
+          "If mass is supplied in kilograms, convert to grams before using a molar mass in g/mol. Rearrange as m=n*M when the amount is known."
+        ]
+      },
+      "Amounts in equations": {
+        "ideas": [
+          "Higher only: coefficients give ratios of moles, not generally equal masses.",
+          "Higher only: convert mass to moles, apply the ratio, then convert back."
+        ],
+        "notes": [
+          "For Mg + 2HCl -> MgCl2 + H2, 0.050 mol Mg needs 0.100 mol HCl and forms 0.050 mol H2 if sufficient acid is available.",
+          "Worked mass example: 2Mg + O2 -> 2MgO. Taking Mg=24 and O=16, 12 g Mg is 0.50 mol. It makes 0.50 mol MgO, giving 0.50*40=20 g.",
+          "Use the coefficient ratio for the substances asked about, and check that the stated other reactant is in excess. Comparing masses directly by coefficient alone is incorrect."
+        ]
+      },
+      "Balancing using moles": {
+        "ideas": [
+          "Higher only: divide each measured mass by its molar mass.",
+          "Higher only: divide the resulting mole amounts by the smallest and obtain whole-number ratios."
+        ],
+        "notes": [
+          "Example: 2.4 g magnesium combines with 1.6 g oxygen atoms. Amounts are 2.4/24=0.10 and 1.6/16=0.10 mol, so the atom ratio is 1:1 and the empirical formula is MgO.",
+          "To write the reaction using oxygen gas, restore the diatomic O2 formula: 2Mg + O2 -> 2MgO. Do not confuse the empirical atom ratio with the coefficient of oxygen molecules.",
+          "If a simplest ratio is 1:1.5, multiply all parts by 2 to obtain 2:3. Keep sufficient intermediate precision before choosing integer ratios."
+        ]
+      },
+      "Limiting reactants": {
+        "ideas": [
+          "Higher only: the limiting reactant is exhausted first.",
+          "Higher only: compare amount divided by coefficient for each reactant."
+        ],
+        "notes": [
+          "For 2H2 + O2 -> 2H2O, suppose there are 3 mol H2 and 2 mol O2. Compare 3/2=1.5 with 2/1=2; hydrogen limits the reaction.",
+          "The 3 mol H2 forms 3 mol water and uses 1.5 mol O2, leaving 0.5 mol O2. Additional oxygen alone cannot increase the yield after all hydrogen is used.",
+          "Never identify the limiting reactant just by choosing the smaller starting mass or smaller number of moles. The required reaction ratio matters."
+        ]
+      },
+      "Concentration in g/dm^3": {
+        "ideas": [
+          "Mass concentration = mass of dissolved solute / volume of solution.",
+          "Use solution volume in dm^3, not the initial water volume in cm^3."
+        ],
+        "notes": [
+          "Worked example: 6.0 g salt in 250 cm^3 of solution. Volume=250/1000=0.250 dm^3, so concentration=6.0/0.250=24 g/dm^3.",
+          "To find the mass needed, use m=c*V. At 8.0 g/dm^3, 0.500 dm^3 contains 4.0 g solute. To prepare a stated solution, dissolve the solid and make up to the final volume.",
+          "Diluting adds solvent without adding solute, so the solute mass stays constant while concentration falls. Do not confuse g/dm^3 with mol/dm^3."
+        ]
+      },
+      "Solute mass and volume": {
+        "ideas": [
+          "Higher only: concentration rises with more solute in the same volume.",
+          "Higher only: concentration falls with greater volume for the same dissolved mass."
+        ],
+        "notes": [
+          "At a fixed solution volume, doubling dissolved mass doubles concentration. At a fixed dissolved mass, doubling the final volume halves concentration.",
+          "Example: 10 g in 0.50 dm^3 gives 20 g/dm^3. Making the same solute up to 2.0 dm^3 gives 5.0 g/dm^3, one quarter of the original concentration.",
+          "This is an inverse relationship only when the amount of solute stays fixed. If solute is added or removed during the change, account for that change before comparing concentrations."
+        ]
+      },
+      "Percentage yield": {
+        "ideas": [
+          "Yield compares the amount actually isolated with the maximum theoretical amount.",
+          "Use matching mass units and multiply the ratio by 100."
+        ],
+        "notes": [
+          "Worked example: theoretical product=12.0 g and dry actual product=9.0 g. Yield=9.0/12.0*100=75%. Rearrange actual mass=yield/100*theoretical mass.",
+          "Product can be lost during transfer, separation or purification; reactions may be incomplete or produce unwanted products. A yield above 100% suggests problems such as wet or contaminated product.",
+          "A high yield does not imply high atom economy. Yield measures how much intended product was obtained from what was theoretically possible; atom economy concerns where atoms go in the balanced reaction."
+        ]
+      },
+      "Theoretical product mass": {
+        "ideas": [
+          "Higher only: calculate theoretical yield from the balanced equation and limiting reactant.",
+          "Higher only: theoretical mass assumes the model reaction goes to completion."
+        ],
+        "notes": [
+          "For CaCO3 -> CaO + CO2, 25.0 g CaCO3 with molar mass 100 g/mol is 0.250 mol. The 1:1 ratio gives 0.250 mol CaO, so theoretical mass is 0.250*56=14.0 g.",
+          "If 11.2 g dry CaO is obtained, percentage yield=11.2/14.0*100=80.0%.",
+          "Keep the theoretical value separate from the actual mass. Use the limiting reagent when two reactants are both given rather than assuming both are completely consumed."
+        ]
+      },
+      "Atom economy": {
+        "ideas": [
+          "Use coefficients and formula masses from the balanced equation.",
+          "Addition reactions with a single product can have 100% atom economy."
+        ],
+        "notes": [
+          "For CaCO3 -> CaO + CO2, treating CaO as the desired product gives atom economy=56/(56+44)*100=56%. The same reaction has a different value if CO2 is the desired product.",
+          "Include the coefficient when several moles of desired product are formed. The denominator is the total formula-mass contribution of all reactants, equal to that of all products in a balanced equation.",
+          "Atom economy is a theoretical fraction of reactant atoms entering the chosen product. It is not reduced by product spilt during filtration; that lowers practical yield instead."
+        ]
+      },
+      "Choosing reaction pathways": {
+        "ideas": [
+          "Higher only: compare atom economy, yield, rate, energy and useful by-products.",
+          "Higher only: the best process depends on the data and practical constraints."
+        ],
+        "notes": [
+          "A high-atom-economy route can still be expensive if it needs high pressure, slow reactions or difficult separation. A lower-atom-economy route may have a valuable by-product or safer conditions.",
+          "Use numerical evidence from the question: compare both yield and energy cost rather than selecting the highest single percentage automatically.",
+          "Distinguish a catalyst improving reaction speed from a catalyst increasing equilibrium yield. Consider waste treatment and limited raw materials when explaining a sustainable industrial choice."
+        ]
+      },
+      "Concentration in mol/dm^3": {
+        "ideas": [
+          "Higher only: n=c*V, where V is in dm^3.",
+          "Higher only: convert between mol/dm^3 and g/dm^3 using molar mass."
+        ],
+        "notes": [
+          "Worked example: 25.0 cm^3 of 0.200 mol/dm^3 NaOH contains 0.200*0.0250=0.00500 mol. With a 1:1 acid reaction, it neutralises 0.00500 mol of that acid.",
+          "If the acid titre is 20.0 cm^3, concentration=0.00500/0.0200=0.250 mol/dm^3. Apply a different coefficient ratio when the balanced equation requires it.",
+          "Multiplying a molar concentration by molar mass gives g/dm^3. For NaOH, 0.200*40.0=8.00 g/dm^3. Units and decimal places must be consistent throughout."
+        ]
+      },
+      "Molar gas volume": {
+        "ideas": [
+          "Higher only: at RTP, V=24*n in dm^3.",
+          "Higher only: equal gas volumes at identical temperature and pressure contain equal amounts in moles."
+        ],
+        "notes": [
+          "Worked example: 120 cm^3 gas is 0.120 dm^3, so amount=0.120/24=0.00500 mol at RTP. Alternatively use 24000 cm^3 per mole consistently.",
+          "For N2 + 3H2 -> 2NH3, gas volume ratios are 1:3:2 when compared under the same conditions. Thus 20 cm^3 nitrogen needs 60 cm^3 hydrogen if reacting completely.",
+          "The value 24 dm^3/mol is for room temperature and pressure; use a different value if explicitly provided. A liquid does not obey the same gas-volume rule."
+        ]
+      }
+    }
+  },
+  "chem_changes": {
+    "key_ideas": [
+      "More reactive metals displace less reactive metals from their compounds.",
+      "Oxidation is oxygen gain; reduction is oxygen loss.",
+      "Carbon can extract metals below carbon in the reactivity series.",
+      "Acid + metal -> salt + hydrogen; use an appropriate metal and dilute acid.",
+      "Acid + oxide or hydroxide -> salt + water.",
+      "Acid + carbonate -> salt + water + carbon dioxide.",
+      "Hydrochloric acid gives chlorides; sulfuric acid gives sulfates; nitric acid gives nitrates.",
+      "Use excess insoluble solid, filtration and crystallisation to make a soluble salt.",
+      "Positive ions move to a negative cathode; negative ions move to a positive anode.",
+      "Electrolysis products differ between molten salts and aqueous solutions.",
+      "Higher only: oxidation loses electrons and reduction gains electrons.",
+      "Higher only: strong/weak refers to ionisation, while concentrated/dilute refers to concentration."
+    ],
+    "topics": {
+      "Key Ideas": {
+        "ideas": [
+          "Apply the four acid reaction patterns and check the salt name.",
+          "Separate oxygen definitions from Higher-only electron definitions."
+        ],
+        "notes": [
+          "Quick application: magnesium oxide with hydrochloric acid forms magnesium chloride and water; magnesium metal with the same acid forms magnesium chloride and hydrogen.",
+          "For electrolysis, first decide whether water is present and whether electrodes are inert. Then identify the cathode and anode products separately.",
+          "Higher only: check that electrons cancel when combining half equations. An acid strength explanation concerns the fraction of acid molecules ionised, not the total volume of acid used."
+        ]
+      },
+      "Metal oxides and oxygen": {
+        "ideas": [
+          "A metal oxide forms when a metal gains oxygen.",
+          "Reduction and oxidation happen together in a redox reaction."
+        ],
+        "notes": [
+          "For CuO + H2 -> Cu + H2O, copper oxide is reduced because it loses oxygen, while hydrogen is oxidised because it gains oxygen. The reducing agent causes oxygen removal from the oxide.",
+          "To answer an identification question, name the starting species that changes, not just the final product. Confirm the equation has equal numbers of each atom on both sides."
+        ]
+      },
+      "Reactivity and displacement": {
+        "ideas": [
+          "A displacement direction follows the ordered series.",
+          "Observations provide evidence for comparative reactivity."
+        ],
+        "notes": [
+          "In Fe + CuSO4 -> FeSO4 + Cu, iron displaces copper and a reddish copper coating can appear. Reversing the pair does not cause the corresponding displacement.",
+          "When comparing acid reaction rates, control surface area, metal mass, acid concentration and temperature. More bubbles per second under matched conditions indicate a faster gas-producing reaction, not necessarily a greater final amount of gas."
+        ]
+      },
+      "Metal extraction": {
+        "ideas": [
+          "Metals below carbon may be reduced using carbon.",
+          "More reactive metals need an alternative such as electrolysis."
+        ],
+        "notes": [
+          "Extraction requires separating a metal from its compounds, whereas an unreactive metal can occur naturally as the element. Choose the method using the metal position relative to carbon, not its abundance alone.",
+          "Iron(III) oxide can be reduced by carbon monoxide: Fe2O3 + 3CO -> 2Fe + 3CO2. Oxygen leaves the iron oxide. Recycling metals can avoid some of the energy and ore-processing costs of fresh extraction."
+        ]
+      },
+      "Electron transfer and redox": {
+        "ideas": [
+          "Higher only: OIL RIG means oxidation loses electrons and reduction gains electrons.",
+          "Higher only: electrons transferred between reactants must balance."
+        ],
+        "notes": [
+          "For Zn + Cu2+ -> Zn2+ + Cu, zinc loses two electrons and is oxidised; copper ions gain two and are reduced. Sulfate ions in copper sulfate solution are spectators.",
+          "A reducing agent donates electrons and is itself oxidised. An oxidising agent accepts electrons and is itself reduced. Check the charge change of the named species rather than treating every positive ion as automatically oxidised."
+        ]
+      },
+      "Acids with metals": {
+        "ideas": [
+          "A suitable metal above hydrogen can release hydrogen from dilute acid.",
+          "Use the acid to identify the anion in the salt."
+        ],
+        "notes": [
+          "For zinc with dilute sulfuric acid: Zn + H2SO4 -> ZnSO4 + H2. Zinc sulfate is the salt and a lit splint confirms hydrogen by a squeaky pop.",
+          "The simple rule needs appropriate conditions: do not generalise the same products to oxidising nitric acid. Copper does not give hydrogen with ordinary dilute hydrochloric acid because it is below hydrogen in the reactivity series."
+        ]
+      },
+      "Acid-metal redox": {
+        "ideas": [
+          "Higher only: metal atoms lose electrons; hydrogen ions gain electrons.",
+          "Higher only: remove unchanged anions from the ionic equation."
+        ],
+        "notes": [
+          "For magnesium and hydrochloric acid, the ionic equation is Mg + 2H+ -> Mg2+ + H2. The metal half equation is Mg -> Mg2+ + 2e-; the hydrogen half equation is 2H+ + 2e- -> H2.",
+          "Both atom counts and total charge agree. Chloride ions appear unchanged in the solution and are omitted from the net ionic equation."
+        ]
+      },
+      "Neutralisation and salts": {
+        "ideas": [
+          "A base neutralises an acid; an alkali is a soluble base.",
+          "The acid supplies the chloride, sulfate or nitrate part of the salt name."
+        ],
+        "notes": [
+          "Example: CuO + H2SO4 -> CuSO4 + H2O. With a carbonate use an additional CO2 product, for example CaCO3 + 2HCl -> CaCl2 + H2O + CO2.",
+          "The metal or ammonium ion comes from the base or carbonate. A neutralisation equation should conserve hydrogen and oxygen as well as the salt-forming elements. Carbon dioxide is confirmed by limewater becoming cloudy."
+        ]
+      },
+      "Preparing soluble salts": {
+        "ideas": [
+          "Excess insoluble reagent consumes the acid and can be filtered off.",
+          "Crystallisation separates a soluble salt from its solvent."
+        ],
+        "notes": [
+          "Do not filter before allowing sufficient reaction with the acid: dissolved acid would pass through the paper with the salt solution. Add solid in small portions until some remains unreacted.",
+          "Warm and concentrate the filtrate, then allow it to cool so crystals form. Rinse crystals with a small amount of cold distilled water and dry them between filter papers. Heating a salt to complete dryness can decompose it or leave impurities trapped in the product."
+        ]
+      },
+      "pH and neutralisation": {
+        "ideas": [
+          "pH below 7 is acidic and pH above 7 alkaline at ordinary room temperature.",
+          "Use indicator or a calibrated pH probe to measure acidity."
+        ],
+        "notes": [
+          "Universal indicator gives a range of colours, so it estimates pH rather than only distinguishing acid and alkali. A probe gives a numerical result but needs correct calibration and rinsing between samples.",
+          "As an acid and alkali react, the pH changes towards the neutral region when suitable amounts are combined. Do not identify the exact end point of every titration using a fixed number of indicator drops; the chosen indicator must suit the reaction."
+        ]
+      },
+      "Titration technique": {
+        "ideas": [
+          "Use a pipette for the fixed aliquot and a burette for the variable volume.",
+          "Take repeat accurate titres near the end point and average suitable concordant values."
+        ],
+        "notes": [
+          "A burette titre is final reading minus initial reading, not just the final number. Example: initial 1.20 cm^3 and final 24.85 cm^3 give 23.65 cm^3.",
+          "Rinse the pipette with the solution it will measure and the burette with its titrant. Rinse flask sides with distilled water during swirling: this washes reactants down without changing their amounts.",
+          "A rough trial locates the end point; do not include it in the mean simply because it was measured first."
+        ]
+      },
+      "Titration calculations": {
+        "ideas": [
+          "Higher only: calculate the known amount, apply the equation ratio and divide by the unknown volume.",
+          "Higher only: convert cm^3 to dm^3 before using molar concentrations."
+        ],
+        "notes": [
+          "For H2SO4 + 2NaOH -> Na2SO4 + 2H2O, 25.0 cm^3 of 0.100 mol/dm^3 NaOH contains 0.00250 mol. It reacts with 0.00125 mol H2SO4, not 0.00250 mol.",
+          "If the acid titre is 20.0 cm^3, its concentration is 0.00125/0.0200=0.0625 mol/dm^3. State which solution each volume belongs to and keep the coefficient ratio visible."
+        ]
+      },
+      "Strong and weak acids": {
+        "ideas": [
+          "Higher only: strong acids ionise completely in water; weak acids ionise only partly.",
+          "Higher only: acid strength and acid concentration describe different things."
+        ],
+        "notes": [
+          "A concentrated weak acid can contain more dissolved acid per dm^3 than a dilute strong acid. At equal molar concentration, the strong acid produces more hydrogen ions and usually has lower pH.",
+          "A one-unit decrease in pH means ten times the hydrogen-ion concentration; a two-unit decrease means one hundred times. A weak acid has an equilibrium between molecules and ions; dilution does not change its identity into a strong acid."
+        ]
+      },
+      "Electrolysis principles": {
+        "ideas": [
+          "An electrolyte must contain ions that can move.",
+          "Cathode is negative and anode positive in an electrolytic cell."
+        ],
+        "notes": [
+          "The external supply transfers electrons through wires, while ions move through the liquid electrolyte. Positive ions are attracted to the cathode, and negative ions to the anode.",
+          "An ionic solid normally does not conduct because its ions are fixed in position. Melting or dissolving can make them mobile. Electrolysis decomposes a substance using electrical energy rather than simply warming it."
+        ]
+      },
+      "Electrolysis of molten salts": {
+        "ideas": [
+          "A molten binary salt contains only its own positive and negative ions.",
+          "The metal is produced at the cathode and the non-metal at the anode."
+        ],
+        "notes": [
+          "Molten lead bromide gives lead at the cathode and bromine at the anode. Molten sodium chloride gives sodium and chlorine. These products differ from those of aqueous sodium chloride because there is no water to provide competing species.",
+          "Identify products from ion charges and electrode signs. Higher only: Pb2+ + 2e- -> Pb and 2Br- -> Br2 + 2e- show the electron changes."
+        ]
+      },
+      "Aluminium extraction": {
+        "ideas": [
+          "Aluminium oxide is dissolved in molten cryolite to lower the operating temperature.",
+          "Carbon anodes react with the oxygen produced and need replacing."
+        ],
+        "notes": [
+          "Cryolite reduces the energy requirement compared with melting pure aluminium oxide. It does not make aluminium extraction a low-energy process: substantial electricity is still required.",
+          "Aluminium forms at the cathode and oxygen forms at the anode. At the hot carbon anode oxygen reacts to give carbon dioxide, consuming the electrode. Explain both the electrical-energy cost and the recurring anode cost when evaluating the process."
+        ]
+      },
+      "Electrolysis in water": {
+        "ideas": [
+          "With inert electrodes, water can affect both electrode products.",
+          "At the cathode compare the metal with hydrogen; at the anode check for halides."
+        ],
+        "notes": [
+          "Aqueous copper sulfate with inert electrodes gives copper at the cathode and oxygen at the anode. Aqueous sodium chloride is taught as giving hydrogen and chlorine under the stated syllabus conditions.",
+          "Hydrogen gives a squeaky pop with a lit splint; oxygen relights a glowing splint; chlorine bleaches damp litmus. Record observations at each electrode separately.",
+          "Copper electrodes in copper sulfate produce different anode behaviour from inert electrodes, so always use the electrode material and concentration conditions specified in the question."
+        ]
+      },
+      "Electrolysis half equations": {
+        "ideas": [
+          "Higher only: reduction half equations take in electrons at the cathode.",
+          "Higher only: oxidation half equations release electrons at the anode."
+        ],
+        "notes": [
+          "Useful examples are Cu2+ + 2e- -> Cu; 2H+ + 2e- -> H2; 2Cl- -> Cl2 + 2e-; and 4OH- -> O2 + 2H2O + 4e-.",
+          "Check that both atoms and total electrical charge balance. In the hydroxide example, the left charge is -4 and the right charge is -4 from four electrons. Multiply entire half equations when combining them so electron totals cancel."
+        ]
+      }
+    }
+  },
+  "chem_energy": {
+    "key_ideas": [
+      "An exothermic reaction transfers energy to the surroundings; an endothermic reaction takes it in.",
+      "A temperature rise of the surroundings indicates an exothermic process.",
+      "Reaction profiles show the energy of reactants, products and the activation-energy barrier.",
+      "Breaking a covalent bond requires energy; forming one releases energy.",
+      "A catalyst lowers the activation-energy pathway, not the reactant-product energy difference.",
+      "Chemical cells transfer energy through a reaction and an external circuit.",
+      "Rechargeable cells can have their reactions reversed using an external supply.",
+      "A hydrogen fuel cell needs a continuing hydrogen and oxygen supply and produces water.",
+      "Evaluate fuel supply and energy production as well as emissions at the point of use.",
+      "Higher only: reaction energy estimate = energy of bonds broken - energy of bonds formed.",
+      "Higher only: fuel-cell half equations must conserve atoms and electrical charge."
+    ],
+    "topics": {
+      "Exothermic and endothermic": {
+        "ideas": [
+          "Exothermic reactions warm their surroundings; endothermic reactions cool them.",
+          "Define the system and surroundings before describing the direction of transfer."
+        ],
+        "notes": [
+          "Combustion, many neutralisations and many oxidation reactions are exothermic. Thermal decomposition and some reactions between solids and solutions are endothermic.",
+          "In a temperature practical, measure starting temperature before mixing and the maximum or minimum afterwards. Temperature change=final-start, with the sign described consistently.",
+          "An insulated cup reduces transfer between the solution and room. A small temperature rise alone does not prove a reaction releases little energy: heat loss, mass and specific heat capacity also affect the reading."
+        ]
+      },
+      "Reaction energy profiles": {
+        "ideas": [
+          "The vertical axis is energy and the horizontal axis is reaction progress.",
+          "Activation energy is measured up from reactants to the peak."
+        ],
+        "notes": [
+          "An exothermic profile ends with products below reactants. An endothermic profile ends above the starting level. Show a separate arrow for the overall energy change; it is not the same as the activation-energy arrow.",
+          "A catalysed curve has a lower peak but the same reactant and product levels. It speeds both forward and reverse pathways without changing the overall reaction energy.",
+          "Do not label the horizontal axis time. The curve describes a reaction pathway, not a direct record of elapsed time or temperature."
+        ]
+      },
+      "Bond energy calculations": {
+        "ideas": [
+          "Higher only: count every bond broken and every bond formed.",
+          "Higher only: a negative broken-minus-formed result is exothermic."
+        ],
+        "notes": [
+          "Example: H2 + Cl2 -> 2HCl. If H-H=436, Cl-Cl=243 and H-Cl=431 kJ/mol, bonds broken total 679 and bonds formed total 862. Energy change=679-862=-183 kJ/mol for the equation as written.",
+          "Use a double-bond energy once for one double bond, not twice as though it were two single bonds. Multiply by every molecule shown in the balanced equation.",
+          "Bond energies are average values, so calculated changes are estimates. Forming bonds releases energy; breaking them never supplies the released energy by itself."
+        ]
+      },
+      "Chemical cells and batteries": {
+        "ideas": [
+          "Two different electrodes and an electrolyte can form a chemical cell.",
+          "The potential difference depends on the chemicals and electrodes."
+        ],
+        "notes": [
+          "A chemical reaction separates charge so electrons can move through an external circuit. A battery contains two or more cells; a single cell is not itself a battery in the strict definition.",
+          "As reactants are used up, a non-rechargeable cell eventually stops supplying useful current. A rechargeable cell can be connected to an external power source that reverses its chemical changes.",
+          "Compare voltage, capacity, mass, reusability and environmental impact for an application. Recharging needs energy and does not create energy from nothing.",
+          "Cells connected in series with the same orientation add their potential differences. Choose suitable electrode and electrolyte combinations, and compare rechargeable cells with non-rechargeable ones using cycle life, replacement cost and the energy used for charging."
+        ]
+      },
+      "Hydrogen fuel cells": {
+        "ideas": [
+          "Hydrogen and oxygen react to form water while providing electrical energy.",
+          "Reactants must be supplied continuously for sustained operation."
+        ],
+        "notes": [
+          "The overall equation is 2H2 + O2 -> 2H2O. A fuel cell makes electrical energy directly from a reaction rather than using combustion to drive a turbine first.",
+          "Water is the main product at the point of use, but hydrogen manufacture can use fossil fuels or electrical energy. Consider the production method, storage pressure, transport and infrastructure when evaluating environmental impact.",
+          "Unlike a sealed battery with a finite stored supply, a fuel cell can continue while suitable fuel and oxidant arrive. It still needs an external fuel source and has practical efficiency limits."
+        ]
+      },
+      "Fuel cell half equations": {
+        "ideas": [
+          "Higher only: hydrogen is oxidised and oxygen is reduced.",
+          "Higher only: use one consistent electrolyte convention when combining equations."
+        ],
+        "notes": [
+          "For an alkaline example, the hydrogen half equation is 2H2 + 4OH- -> 4H2O + 4e-. Oxygen reacts as O2 + 2H2O + 4e- -> 4OH-.",
+          "Adding and cancelling electrons, hydroxide ions and excess water gives 2H2 + O2 -> 2H2O. The electron count agrees in both half equations.",
+          "An acid-electrolyte representation instead uses H+ ions. Do not combine one alkaline half equation with one acidic half equation without accounting for the different species."
+        ]
+      }
+    }
+  },
+  "chem_rates": {
+    "key_ideas": [
+      "Mean reaction rate is quantity changed divided by elapsed time.",
+      "A rate-graph gradient shows how quickly a measured quantity changes.",
+      "A tangent estimates instantaneous rate at one point on a curve.",
+      "A successful collision needs enough energy to exceed activation energy.",
+      "Higher temperature raises the frequency and energetic effectiveness of collisions.",
+      "Higher concentration, gas pressure or exposed surface area can increase collision frequency.",
+      "A catalyst supplies a pathway with lower activation energy and is regenerated.",
+      "Changing rate does not necessarily change final yield when the limiting reactant amount is unchanged.",
+      "A reversible reaction can proceed in both directions.",
+      "In a closed system dynamic equilibrium has equal forward and reverse rates, not necessarily equal amounts.",
+      "Higher only: Le Chatelier predictions oppose an imposed concentration, temperature or pressure change.",
+      "Higher only: pressure favours fewer gas molecules; a catalyst does not shift equilibrium."
+    ],
+    "topics": {
+      "Reaction rates and graphs": {
+        "ideas": [
+          "Rate = quantity of reactant used or product formed / time.",
+          "Compare gradients and final amounts as separate features."
+        ],
+        "notes": [
+          "If 60 cm^3 gas forms in 30 s, the mean rate is 2.0 cm^3/s. A gas-volume-versus-time curve is steepest when gas forms fastest; a flat section means no further measurable gas production.",
+          "The gradient is change in vertical quantity divided by change in time. For mass-loss graphs, use the magnitude when reporting a positive reaction rate.",
+          "A faster reaction can reach the same plateau earlier. Different plateau heights may mean different limiting-reactant amounts, a different reaction or an experimental loss, rather than just a rate change."
+        ]
+      },
+      "Instantaneous rate in mol/s": {
+        "ideas": [
+          "Higher only: a tangent gives rate at a specified instant.",
+          "Higher only: use the tangent slope rather than a chord through the whole curve."
+        ],
+        "notes": [
+          "Draw a tangent touching the curve at the requested point. Choose two well-separated points on that tangent, then calculate change in amount divided by change in time.",
+          "If a tangent rises by 0.030 mol over 20 s, instantaneous rate=0.0015 mol/s. If a reactant curve slopes down, state a positive rate of disappearance using the slope magnitude.",
+          "Conversion from mass to mol requires the correct molar mass. A tangent estimates one instant; an average gradient over a long interval answers a different question."
+        ]
+      },
+      "Factors affecting reaction rate": {
+        "ideas": [
+          "Control temperature, concentration, pressure, surface area and catalyst when comparing rates.",
+          "Change only the independent variable in a fair comparison."
+        ],
+        "notes": [
+          "Powdered calcium carbonate exposes more surface than equal-mass chips and can react faster with the same acid. In an excess-acid comparison, both samples can still form the same total carbon dioxide.",
+          "Increasing gas pressure places more particles in the same volume. Increasing solution concentration gives more reacting particles per unit volume.",
+          "State a measurable dependent variable, such as gas volume per second or time for a fixed cloudiness. More frequent collisions explain several factors, but temperature also changes the fraction with sufficient energy."
+        ]
+      },
+      "Collision theory": {
+        "ideas": [
+          "Particles must collide and have sufficient energy for a successful reaction.",
+          "Activation energy is the minimum energy required along a given pathway."
+        ],
+        "notes": [
+          "Not every collision produces products. Raising concentration increases the number of encounters per second, while heating also increases particle speeds and the fraction exceeding activation energy.",
+          "Increasing a solid surface area exposes more reactive particles to collisions. Crushing does not make the individual particles hotter or create extra moles of material.",
+          "Link the named experimental change to a particle-level effect and then to the successful-collision rate. Simply saying particles have more energy does not explain a concentration change at constant temperature."
+        ]
+      },
+      "Catalysts": {
+        "ideas": [
+          "A catalyst provides a lower-activation-energy pathway.",
+          "The catalyst is regenerated and does not change the final equilibrium position."
+        ],
+        "notes": [
+          "A lower barrier lets a larger fraction of collisions succeed at the same temperature. The reactants and products remain the same, so the overall energy difference does not change.",
+          "A catalyst may participate in intermediate steps but is recovered overall; saying it never reacts is inaccurate. Different reactions need suitable catalysts, and enzymes are biological catalysts.",
+          "In a rate graph the catalysed reaction can reach its plateau sooner. At equilibrium the catalyst speeds both directions and shortens the time taken to reach the same equilibrium composition."
+        ]
+      },
+      "Reversible reactions": {
+        "ideas": [
+          "The products can react to remake the starting substances.",
+          "The two arrows describe opposite chemical directions."
+        ],
+        "notes": [
+          "Heating hydrated copper sulfate removes water and gives white anhydrous copper sulfate; adding water restores the blue hydrated material. Reversal is not just a physical movement back to the starting container.",
+          "Conditions such as temperature and water availability can favour one direction. Use a reversible arrow when showing that both reactions are possible.",
+          "A reversible reaction need not already be at equilibrium. Equilibrium additionally requires appropriate conditions, including a closed system and equal forward and reverse rates."
+        ]
+      },
+      "Energy in reversible reactions": {
+        "ideas": [
+          "If one direction is exothermic, the reverse direction is endothermic.",
+          "Equal amounts reversed transfer equal energy magnitudes in opposite directions."
+        ],
+        "notes": [
+          "If a forward reaction releases 50 kJ for a given amount, undoing the same change takes in 50 kJ. Reactant and product energy levels swap when the equation is reversed.",
+          "For hydrated copper sulfate, heating to remove water requires energy; rehydration transfers energy to the surroundings.",
+          "Keep the reaction amount consistent when comparing energy. Doubling the number of moles in an equation doubles the energy change for that written amount, without changing the exothermic/endothermic direction."
+        ]
+      },
+      "Dynamic equilibrium": {
+        "ideas": [
+          "A closed system prevents relevant substances from escaping.",
+          "At equilibrium both directions continue at equal rates."
+        ],
+        "notes": [
+          "At first the forward reaction may be faster, producing more products. As reactants fall and products build up, the reverse rate can increase until the rates match.",
+          "At that point concentrations stay constant macroscopically, but particles still react in both directions. Equal rates do not require equal concentrations or a 50:50 mixture.",
+          "An open vessel losing a gas may not reach the same equilibrium because material escapes. Do not describe dynamic equilibrium as reactions having stopped."
+        ]
+      },
+      "Le Chatelier's principle": {
+        "ideas": [
+          "Higher only: an equilibrium responds in the direction that opposes an imposed change.",
+          "Higher only: identify the change before deciding the favoured reaction direction."
+        ],
+        "notes": [
+          "Treat concentration, temperature and pressure separately. Increasing a reactant concentration favours its use; raising temperature favours the endothermic direction; increasing gas pressure favours fewer gas molecules.",
+          "For N2 + 3H2 <-> 2NH3, increased pressure favours ammonia because four gas molecules become two. The conclusion comes from the coefficients, not the number of different gas names.",
+          "A catalyst affects how quickly equilibrium is reached, not which side is favoured. If two conditions change together, analyse both effects rather than guessing a net result."
+        ]
+      },
+      "Concentration effects": {
+        "ideas": [
+          "Higher only: adding a species favours a direction that consumes it.",
+          "Higher only: removing a species favours a direction that replaces it."
+        ],
+        "notes": [
+          "For A + B <-> C, adding A favours the forward change, using some added A and producing more C. Removing C also favours the forward direction until equilibrium is re-established.",
+          "The system does not necessarily remove the whole imposed change; it changes composition until forward and reverse rates match again.",
+          "Describe a shift of position as an increase in the relative product or reactant amount. Avoid claiming an equilibrium constant changes because concentration changed at the same temperature; that is beyond the required explanation and would be incorrect."
+        ]
+      },
+      "Temperature at equilibrium": {
+        "ideas": [
+          "Higher only: warming favours the endothermic direction.",
+          "Higher only: cooling favours the exothermic direction."
+        ],
+        "notes": [
+          "For an exothermic forward reaction, increasing temperature lowers the equilibrium product yield, even though both directions generally become faster. Cooling raises the equilibrium yield but can make production impractically slow.",
+          "Identify the energy sign or energy-profile information before predicting a direction. If the reverse reaction absorbs heat, warming favours that reverse reaction.",
+          "Separate rate from yield in industrial answers. A higher operating temperature can improve throughput despite a smaller equilibrium fraction of product."
+        ]
+      },
+      "Gas pressure at equilibrium": {
+        "ideas": [
+          "Higher only: higher pressure favours the side with fewer gas molecules.",
+          "Higher only: equal gas totals give no pressure-driven equilibrium shift."
+        ],
+        "notes": [
+          "For 2SO2(g) + O2(g) <-> 2SO3(g), reactant gas total is three and product total two, so higher pressure favours SO3.",
+          "For H2(g) + I2(g) <-> 2HI(g), each side has two gas molecules by coefficient, so pressure does not favour one side through a gas-number difference.",
+          "Count gaseous coefficients only, using state symbols. High pressure may also increase collision frequency and rate, but that is a different explanation from an equilibrium shift."
+        ]
+      }
+    }
+  },
+  "chem_organic": {
+    "key_ideas": [
+      "A hydrocarbon contains carbon and hydrogen only.",
+      "Alkanes are saturated with general formula CnH(2n+2).",
+      "Fractional distillation separates a mixture using boiling-point differences; cracking changes molecules chemically.",
+      "Longer hydrocarbon chains generally boil at higher temperatures, flow less easily and ignite less readily.",
+      "Complete combustion produces CO2 and H2O; incomplete combustion can produce CO and soot.",
+      "Alkenes contain C=C and have general formula CnH(2n) for the simple series.",
+      "Alkenes decolourise bromine water in an addition reaction.",
+      "Alcohols contain -OH; carboxylic acids contain -COOH.",
+      "Carboxylic acid plus alcohol can produce an ester and water.",
+      "Addition polymerisation joins alkene monomers without a small-molecule by-product.",
+      "Higher only: condensation polymerisation and amino-acid links release small molecules.",
+      "Higher only: weak carboxylic acids are only partly ionised in water."
+    ],
+    "topics": {
+      "Crude oil and alkanes": {
+        "ideas": [
+          "Crude oil is a finite mixture containing many hydrocarbons.",
+          "A homologous series shares a general formula, functional group pattern and similar reactions."
+        ],
+        "notes": [
+          "Methane CH4, ethane C2H6, propane C3H8 and butane C4H10 are the first four alkanes. They contain only C-C single bonds and are described as saturated.",
+          "The alkane formula CnH(2n+2) predicts C5H12 for five carbon atoms. Structural formulas show how atoms connect, whereas molecular formulas show only totals.",
+          "Crude oil formed over geological timescales from ancient biological material. It is a mixture, not a single compound with a unique boiling point or chemical formula."
+        ]
+      },
+      "Fractional distillation": {
+        "ideas": [
+          "Different hydrocarbons have different boiling points.",
+          "A fraction is still a mixture of similar-boiling molecules."
+        ],
+        "notes": [
+          "Vaporised crude oil enters a column that is hot at the bottom and cooler at the top. A hydrocarbon rises until the temperature is low enough for it to condense.",
+          "Large molecules with high boiling points condense lower down. Smaller, lower-boiling molecules are collected higher up. Some gases leave at the top.",
+          "No covalent bonds are broken in fractional distillation, so it is a physical separation. Cracking is a different process: it breaks large molecules into smaller ones by a chemical reaction."
+        ]
+      },
+      "Hydrocarbon trends and burning": {
+        "ideas": [
+          "Longer chains tend to have higher boiling points and greater viscosity.",
+          "Complete combustion requires a sufficient oxygen supply."
+        ],
+        "notes": [
+          "As molecules get larger, intermolecular forces strengthen, requiring more energy to separate them. Longer chains are generally less volatile and less easily ignited than shorter ones.",
+          "Complete methane combustion is CH4 + 2O2 -> CO2 + 2H2O. With insufficient oxygen, carbon monoxide and carbon particulates can form as well as water.",
+          "A smoky yellow flame suggests incomplete combustion and soot. Carbon monoxide is toxic even though it is colourless. Do not describe incomplete combustion as producing only unreacted fuel."
+        ]
+      },
+      "Cracking and alkenes": {
+        "ideas": [
+          "Cracking converts long-chain hydrocarbons into shorter alkanes and alkenes.",
+          "An alkene can be tested using bromine water."
+        ],
+        "notes": [
+          "Vaporise the feed and pass it over a hot catalyst, or mix with steam and heat strongly, depending on the method. Cracking helps match the demand for smaller fuels and feedstocks.",
+          "Example: C10H22 -> C8H18 + C2H4. Carbon totals 10 and hydrogen totals 22 on each side. Ethene is unsaturated and can be used to make polymers.",
+          "Bromine water changes from orange to colourless with an alkene. Cracking is chemical change because covalent bonds are broken and new substances form; fractional distillation only separates existing components."
+        ]
+      },
+      "Alkene structures": {
+        "ideas": [
+          "A C=C double bond makes an alkene unsaturated.",
+          "For one double bond in an unbranched acyclic alkene, the formula is CnH(2n)."
+        ],
+        "notes": [
+          "Ethene is C2H4, propene C3H6 and butene C4H8. Each carbon still forms a total of four covalent bonds when a double bond counts as two.",
+          "A displayed formula must show each atom and bond. Check the bonds around each carbon before counting hydrogen atoms.",
+          "The formula alone does not always identify a unique structure; four-carbon alkenes can place the double bond differently. Use the displayed structure given in the question to predict addition products.",
+          "Pentene C5H10 is the fourth member of the simple alkene series after ethene, propene and butene. There is no one-carbon alkene because a C=C bond requires two carbons."
+        ]
+      },
+      "Alkene reactions": {
+        "ideas": [
+          "Addition reactions use the C=C bond to attach new atoms.",
+          "Hydrogen, steam and halogens can add across a double bond."
+        ],
+        "notes": [
+          "Ethene plus hydrogen gives ethane using a suitable catalyst: C2H4 + H2 -> C2H6. Ethene with steam forms ethanol under suitable industrial conditions.",
+          "Bromine adds across the double bond to form a dibromo compound, decolourising bromine water. Draw a single C-C bond in the product and attach one bromine to each original double-bond carbon.",
+          "Do not remove carbon atoms from the skeleton in an addition reaction. Compare alkene bromine addition with polymerisation, where many double bonds open to link monomers together.",
+          "Recall suitable conditions where required: hydrogen addition uses a nickel catalyst; steam addition to ethene uses a phosphoric-acid catalyst at elevated temperature and pressure. In bromine addition the orange solution decolourises without needing the high-temperature cracking conditions."
+        ]
+      },
+      "Alcohols": {
+        "ideas": [
+          "The alcohol functional group is -OH.",
+          "Ethanol can be made by fermentation or by adding steam to ethene."
+        ],
+        "notes": [
+          "Methanol, ethanol, propanol and butanol are the first four alcohols. They dissolve in water to varying extents, burn in air and react with sodium to release hydrogen.",
+          "Fermentation uses sugars and enzymes in yeast under warm, oxygen-limited conditions. For glucose: C6H12O6 -> 2C2H5OH + 2CO2. Ethanol can also be produced from ethene and steam.",
+          "Alcohols can be oxidised to carboxylic acids using an appropriate oxidising agent. The -OH group is covalently bonded within an alcohol; it does not mean the liquid contains hydroxide ions like an alkali.",
+          "For fermentation, use yeast at a warm temperature, commonly about 30-40 C, without an oxygen supply. Too cold slows enzyme activity, while excessive heat denatures enzymes. Ethanol is used as a fuel and solvent; fermentation gives an aqueous mixture rather than immediately pure ethanol."
+        ]
+      },
+      "Carboxylic acids and esters": {
+        "ideas": [
+          "The -COOH group identifies a carboxylic acid.",
+          "An acid plus an alcohol forms an ester and water under suitable conditions."
+        ],
+        "notes": [
+          "Methanoic, ethanoic, propanoic and butanoic acids are the first four carboxylic acids. They react with carbonates to give a salt, water and carbon dioxide.",
+          "Ethanoic acid plus ethanol can form ethyl ethanoate and water. An acid catalyst is used in the school model of esterification. Esters have the functional linkage -COO- and often have distinctive smells.",
+          "Name a carboxylate salt from the acid, for example ethanoic acid gives ethanoates. Do not confuse an ester with the salt made by neutralisation."
+        ]
+      },
+      "Carboxylic acid ionisation": {
+        "ideas": [
+          "Higher only: carboxylic acids ionise partly in water.",
+          "Higher only: at equal concentration, partial ionisation gives fewer H+ ions than a strong acid."
+        ],
+        "notes": [
+          "For ethanoic acid, use a reversible equation to show CH3COOH <-> H+ + CH3COO- in aqueous solution. Most molecules remain unionised at ordinary concentrations.",
+          "A comparison with hydrochloric acid at the same concentration tests acid strength rather than concentration. The weak acid usually has a higher pH because fewer hydrogen ions are produced.",
+          "Dilute and weak are not synonyms. A large concentration of a weak acid and a small concentration of a strong acid cannot be ranked by the words strong and weak alone."
+        ]
+      },
+      "Addition polymers": {
+        "ideas": [
+          "The monomer contains a carbon-carbon double bond.",
+          "The polymer repeat unit has a carbon-carbon single-bond backbone and no small-molecule by-product."
+        ],
+        "notes": [
+          "For ethene, open the C=C to make a repeat unit -CH2-CH2-. Draw continuation bonds through brackets and write n outside. Atoms attached to the original carbons stay attached.",
+          "Poly(propene) has a CH3 side group on alternate backbone carbons; do not remove that group when redrawing its monomer.",
+          "Addition polymerisation conserves all monomer atoms in the polymer. Converting a repeat unit back into a monomer restores the C=C between the two backbone carbons."
+        ]
+      },
+      "Condensation polymers": {
+        "ideas": [
+          "Higher only: monomers need functional groups able to react at both ends.",
+          "Higher only: linking monomers releases a small molecule such as water."
+        ],
+        "notes": [
+          "A diol and a dicarboxylic acid can form a polyester. Each link forms between alcohol and carboxylic-acid groups, producing an ester linkage and water.",
+          "Unlike addition polymerisation, a C=C double bond is not the essential starting feature. Identify the end functional groups and show how the repeat unit contains the residues of both monomers.",
+          "For diagrams, keep the atoms in the backbone in the correct order. The exact water count in a short finite chain depends on how many links are formed; use the number of actual condensation links shown."
+        ]
+      },
+      "Amino acids and peptides": {
+        "ideas": [
+          "Higher only: an amino acid contains an amino group and a carboxylic-acid group.",
+          "Higher only: condensation links amino acids to form polypeptides."
+        ],
+        "notes": [
+          "A simple amino acid can be represented H2N-CH(R)-COOH. The amino group of one molecule reacts with the carboxylic-acid group of another, releasing water and forming a peptide linkage.",
+          "Different amino-acid side groups produce different sequences. Proteins are made from such polypeptide chains and have structures related to their functions.",
+          "Distinguish a monomer from a repeat-unit drawing. The original two functional groups explain why a chain can continue linking at both ends."
+        ]
+      },
+      "DNA and natural polymers": {
+        "ideas": [
+          "DNA, proteins, starch and cellulose are naturally occurring polymers.",
+          "Their monomers and biological roles differ."
+        ],
+        "notes": [
+          "DNA contains two polymer chains arranged as a double helix. Its nucleotide units carry the information used in inheritance and protein production.",
+          "Proteins are built from amino acids. Starch and cellulose are made from sugar-based units, but their arrangements give different properties and functions.",
+          "Do not assume that every polymer is a manufactured plastic or that all natural polymers contain the same monomer. Higher only: explaining amino-acid condensation and peptide formation belongs to the separately labelled Higher content."
+        ]
+      }
+    }
+  },
+  "chem_analysis": {
+    "key_ideas": [
+      "A chemically pure substance is one element or one compound, not merely a natural product.",
+      "A formulation is a mixture with chosen proportions for a purpose.",
+      "Chromatography separates components according to their behaviour between mobile and stationary phases.",
+      "Rf compares spot distance with solvent-front distance from the same baseline.",
+      "Hydrogen pops with a lit splint; oxygen relights a glowing splint.",
+      "Carbon dioxide clouds limewater; chlorine bleaches damp litmus.",
+      "Flame tests identify characteristic metal-ion colours; contamination can mask them.",
+      "Sodium hydroxide can form coloured or white metal hydroxide precipitates.",
+      "Carbonates release CO2 with acid; halides give silver-halide precipitates after nitric acid.",
+      "Sulfate gives a white barium sulfate precipitate after appropriate acidification.",
+      "A precipitate is an insoluble solid, not just any colour change.",
+      "Instrumental analysis can be fast, sensitive and precise but requires calibration and suitable reference data."
+    ],
+    "topics": {
+      "Chemical purity": {
+        "ideas": [
+          "Pure means one element or one compound in chemistry.",
+          "A sharp melting point can support purity; a range can indicate contamination."
+        ],
+        "notes": [
+          "A pure sample melts at a characteristic temperature under fixed pressure. Impurities commonly lower and broaden the melting range. Compare a measured range with an accepted value instead of judging by colour alone.",
+          "A substance described as pure in everyday advertising may still be a mixture: pure orange juice contains many dissolved compounds.",
+          "One observation does not always identify an unknown uniquely. Combine melting-point evidence with other tests where needed, and distinguish chemical purity from safety or cleanliness."
+        ]
+      },
+      "Formulations": {
+        "ideas": [
+          "Ingredients and proportions are selected to deliver useful properties.",
+          "A formulation is a designed mixture, not a new single compound."
+        ],
+        "notes": [
+          "In paint, pigment provides colour, a binder holds the coating and a solvent helps application. Changing the ratio can alter covering power, drying or texture.",
+          "Medicines, cleaning products, fuels and fertilisers are other examples. Identify what each component does and why accurate quantities matter.",
+          "The ingredients are not necessarily chemically joined in a fixed ratio as in a compound. A formulation can have different useful proportions for different purposes while using the same main components."
+        ]
+      },
+      "Chromatography and Rf": {
+        "ideas": [
+          "Measure both distances from the pencil baseline.",
+          "Rf values are only comparable under matching conditions."
+        ],
+        "notes": [
+          "If a spot centre travels 3.6 cm and the solvent front 6.0 cm, Rf=3.6/6.0=0.60, with no unit. A mixture can produce several spots.",
+          "The starting spots must be above the solvent so they are carried up rather than dissolving directly into the reservoir. Mark the front before the solvent evaporates; use pencil because ink can dissolve.",
+          "A component more soluble in the mobile phase or less attracted to the stationary phase travels farther. One spot is evidence consistent with purity in that system, but unresolved components can overlap."
+        ]
+      },
+      "Hydrogen test": {
+        "ideas": [
+          "A small gas sample gives a squeaky pop with a lit splint.",
+          "A positive gas test is an observation used to support an identification."
+        ],
+        "notes": [
+          "Collect a small suitable sample and present a lighted splint at the opening using the instructed practical method. The pop occurs as hydrogen reacts with oxygen to form water.",
+          "Write the result as a squeaky pop with a lit splint. A glowing splint is the oxygen test and should not be substituted.",
+          "Use the gas test to confirm a prediction such as metal + dilute acid forming hydrogen; bubbling alone does not identify which gas was produced."
+        ]
+      },
+      "Oxygen test": {
+        "ideas": [
+          "Oxygen relights a glowing splint.",
+          "The splint must be glowing, not already burning strongly."
+        ],
+        "notes": [
+          "Expose a glowing splint to the collected gas using the instructed practical arrangement. Relighting supports the presence of oxygen because oxygen supports combustion.",
+          "Hydrogen gives a pop with a lit splint, so the condition of the splint is part of the test definition.",
+          "Do not identify any gas as oxygen just because it is colourless. For an electrolysis investigation, test the appropriate electrode product and record observations separately."
+        ]
+      },
+      "Carbon dioxide test": {
+        "ideas": [
+          "Carbon dioxide turns limewater cloudy.",
+          "The cloudiness is a calcium carbonate precipitate."
+        ],
+        "notes": [
+          "Bubble the gas through limewater. The equation is CO2 + Ca(OH)2 -> CaCO3 + H2O; solid calcium carbonate scatters light and gives the milky appearance.",
+          "A carbonate reacting with an acid produces carbon dioxide, so combine the acid reaction with the limewater confirmation when identifying a carbonate.",
+          "Do not describe the observation merely as a colour change to white gas. The limewater becomes cloudy because a solid forms in the liquid."
+        ]
+      },
+      "Chlorine test": {
+        "ideas": [
+          "Chlorine bleaches damp litmus paper.",
+          "Damp conditions are essential to the stated school test."
+        ],
+        "notes": [
+          "The paper may first turn red and then become white. State bleaching as the key observation; the result is different from ordinary acidity alone.",
+          "Use the instructed small-scale method because chlorine is harmful. The test requires damp paper rather than a dry strip held far from the sample.",
+          "Do not confuse the element chlorine, Cl2, with chloride ions in a salt solution. A silver nitrate test identifies halide ions, not chlorine gas."
+        ]
+      },
+      "Flame tests": {
+        "ideas": [
+          "Know the specified colours for Li, Na, K, Ca and Cu ions.",
+          "Use clean apparatus and avoid confusing contamination with the sample."
+        ],
+        "notes": [
+          "Colours: lithium crimson; sodium yellow; potassium lilac; calcium orange-red; copper green. A cleaned wire loop is dipped into the sample and held in a suitable non-luminous flame as directed.",
+          "Rinse or clean the loop between samples; sodium contamination can dominate and mask other colours. A mixture can be harder to interpret than a single-ion sample.",
+          "Flame colour identifies evidence for a metal ion, not the accompanying anion. Use a separate test for chloride, sulfate or carbonate."
+        ]
+      },
+      "Metal hydroxide tests": {
+        "ideas": [
+          "Add sodium hydroxide in drops, then excess where specified.",
+          "Colour and solubility in excess help distinguish the ions."
+        ],
+        "notes": [
+          "Copper(II) gives blue precipitate, iron(II) green and iron(III) brown. Aluminium, calcium and magnesium give white precipitates, but aluminium hydroxide dissolves in excess sodium hydroxide.",
+          "Use a fresh portion of sample and record whether the solid remains when excess reagent is added. White precipitate alone does not uniquely identify every metal ion.",
+          "An insoluble hydroxide is the precipitate. Distinguish a solid appearing from a solution merely becoming a different colour, and use follow-up tests when several ions fit the observation."
+        ]
+      },
+      "Carbonate ion test": {
+        "ideas": [
+          "Add dilute acid to release a gas from a carbonate.",
+          "Confirm carbon dioxide using limewater."
+        ],
+        "notes": [
+          "The general reaction is carbonate + acid -> salt + water + carbon dioxide. A fizzing sample is only the first observation; the limewater test identifies the gas.",
+          "Use a separate sample from those needed for halide or sulfate tests, so one added reagent does not contaminate another result.",
+          "Bubbling could also arise in another gas-producing reaction, for example acid with a metal. The confirmatory limewater result distinguishes carbon dioxide from hydrogen."
+        ]
+      },
+      "Halide ion tests": {
+        "ideas": [
+          "Acidify with dilute nitric acid, then add silver nitrate.",
+          "Chloride is white, bromide cream and iodide yellow."
+        ],
+        "notes": [
+          "Use nitric acid rather than hydrochloric acid, which would introduce chloride and cause a false positive. Acidification helps remove carbonate interference.",
+          "Silver ions react with halide ions to form insoluble silver halides. Higher only: Ag+ + Cl- -> AgCl(s) is a net ionic example with charges and atoms balanced.",
+          "Describe a precipitate with its colour. The absence of a visible precipitate does not prove every possible impurity is absent; concentration and detection limits can matter."
+        ]
+      },
+      "Sulfate ion test": {
+        "ideas": [
+          "Acidify with dilute hydrochloric acid and add barium chloride.",
+          "A white precipitate supports the presence of sulfate ions."
+        ],
+        "notes": [
+          "Barium sulfate is very insoluble, giving the characteristic white solid. Acidification helps remove carbonate that could otherwise give a misleading white barium carbonate precipitate.",
+          "Do not use sulfuric acid for acidification because it supplies sulfate ions itself. Use a fresh sample so the reagent sequence from another test does not contaminate this one.",
+          "Higher only: Ba2+ + SO4^2- -> BaSO4(s) represents the net precipitation with zero total charge on both sides."
+        ]
+      },
+      "Instrumental analysis": {
+        "ideas": [
+          "An instrument can detect small quantities and make rapid measurements.",
+          "Reliable identification needs calibration, references and an appropriate method."
+        ],
+        "notes": [
+          "Advantages can include sensitivity, speed, accuracy and the ability to analyse mixtures. Disadvantages can include purchase cost, specialist training, maintenance and sample preparation.",
+          "A calibration compares signals with known standards. A strong signal alone is not a concentration until the relationship and background have been established.",
+          "For an evaluation, match the method to the task: rapid low-level analysis may justify expensive equipment, while a simple known-ion test may be sufficient for a classroom sample."
+        ]
+      },
+      "Flame emission spectroscopy": {
+        "ideas": [
+          "Line positions identify ions by comparison with known spectra.",
+          "Line intensity can be used for concentration after calibration."
+        ],
+        "notes": [
+          "An atom or ion emits characteristic wavelengths after excitation. Several characteristic lines can help identify a species more reliably than a broad visible flame colour.",
+          "Plotting signal intensity against known concentrations gives a calibration relationship. Compare an unknown intensity with this graph, keeping measurement conditions consistent.",
+          "Mixtures may show lines from several elements. Distinguish wavelength, used for identity, from intensity, used to estimate concentration; a more intense line is not automatically a different element."
+        ]
+      }
+    }
+  },
+  "chem_atmosphere": {
+    "key_ideas": [
+      "Dry air is about 78% nitrogen and 21% oxygen, with other gases making up roughly 1%.",
+      "Early-atmosphere models are based on incomplete evidence and comparison with geological processes.",
+      "Cooling condensed water vapour to form oceans.",
+      "Photosynthesis removed carbon dioxide and released oxygen.",
+      "Carbon was stored in carbonate rocks and fossil deposits over long timescales.",
+      "Greenhouse gases absorb and emit outgoing infrared, warming the surface and atmosphere.",
+      "Human activities can increase CO2 and methane concentrations.",
+      "Assess climate evidence across long-term trends, not a single weather event.",
+      "A carbon footprint includes relevant greenhouse-gas emissions across a life cycle.",
+      "Incomplete combustion forms toxic carbon monoxide and particulates.",
+      "Sulfur dioxide and nitrogen oxides contribute to respiratory problems and acid rain.",
+      "Reducing emissions requires evaluating cost, technology, behaviour and evidence."
+    ],
+    "topics": {
+      "The atmosphere today": {
+        "ideas": [
+          "Quote nitrogen and oxygen proportions for dry air.",
+          "Water vapour varies with conditions and is not a fixed percentage."
+        ],
+        "notes": [
+          "For a rough sample of 100 units of dry air, about 78 are nitrogen and 21 oxygen, leaving about 1 for argon and trace gases including carbon dioxide. The small carbon-dioxide fraction can still have a large environmental role.",
+          "Air is a mixture: its gases are not combined into one compound with a fixed chemical formula.",
+          "Be clear whether figures refer to dry air. Do not use an old rounded carbon-dioxide percentage as a precise real-time measurement; the syllabus explanation concerns its role and changes, not memorising a constantly updated decimal."
+        ]
+      },
+      "Early atmosphere": {
+        "ideas": [
+          "Volcanic gases are evidence for models of the early atmosphere.",
+          "The very early atmosphere had little free oxygen."
+        ],
+        "notes": [
+          "A common model has volcanic emissions supplying much carbon dioxide and water vapour, with nitrogen and smaller amounts of other gases. The record from billions of years ago is limited, so distinguish evidence from inference.",
+          "As Earth cooled below the conditions needed for water to remain as vapour, water condensed into liquid oceans. This was a physical state change.",
+          "Do not assume the early atmosphere had the same proportions as modern air. Volcanism and the atmosphere changed over time, rather than one composition remaining constant throughout Earth history."
+        ]
+      },
+      "Oxygen in the atmosphere": {
+        "ideas": [
+          "Photosynthetic organisms release oxygen.",
+          "Increasing oxygen enabled widespread aerobic life over geological time."
+        ],
+        "notes": [
+          "Algae evolved before large land plants. Photosynthesis uses carbon dioxide and water to make organic material and oxygen; later plants continued the atmospheric change.",
+          "Some early oxygen reacted with substances such as dissolved iron before it accumulated in the atmosphere. Oxygen growth was not an instantaneous switch to the modern value.",
+          "A complete explanation links a biological process to changing gas amounts. Respiration uses oxygen and returns carbon dioxide, so it should not be confused with the process that initially increased atmospheric oxygen."
+        ]
+      },
+      "Removal of carbon dioxide": {
+        "ideas": [
+          "Oceans, carbonate rocks and biological processes reduced atmospheric CO2.",
+          "Long-term storage differs from rapid cycling between living organisms and air."
+        ],
+        "notes": [
+          "Carbon dioxide dissolved in newly formed oceans. Carbon became part of carbonate sediments and rocks, including limestone formed from remains of organisms with carbonate shells.",
+          "Photosynthesis put carbon into living material. Burial and geological processing formed fossil fuels, while shells and sediments provided long-lived carbonate stores.",
+          "Burning fossil fuels reverses some of that storage by returning carbon to the atmosphere much faster than the fuels form. Describe several linked stores and processes rather than claiming all early CO2 simply disappeared into plants."
+        ]
+      },
+      "Greenhouse gases": {
+        "ideas": [
+          "Greenhouse gases absorb outgoing infrared and re-emit energy.",
+          "The natural greenhouse effect and its enhancement are distinct ideas."
+        ],
+        "notes": [
+          "Shorter-wavelength solar radiation can reach and warm the surface. The surface emits longer-wavelength infrared; gases such as CO2, methane and water vapour absorb some wavelengths and emit radiation in different directions.",
+          "This changes the energy balance and keeps the surface warmer than it would be without those gases. Additional greenhouse gases can strengthen the effect.",
+          "Do not say all sunlight is trapped or that greenhouse gases make a solid reflective roof. Explain absorption of outgoing infrared, and do not confuse the greenhouse effect with ozone depletion."
+        ]
+      },
+      "Human sources of greenhouse gases": {
+        "ideas": [
+          "Burning fuels and removing forests can increase atmospheric CO2.",
+          "Livestock, landfill, rice growing and fuel-system leaks can release methane."
+        ],
+        "notes": [
+          "Combustion transfers carbon from fossil stores into carbon dioxide. Deforestation can both release stored carbon and reduce future removal by photosynthesis.",
+          "Methane can arise from anaerobic biological processes and from extraction or distribution of fossil fuels. Distinguish an emission source from an activity that mainly changes absorption.",
+          "Compare sources using data on amount, warming effect and timescale when supplied. A low concentration does not mean a gas has no effect; different gases interact with infrared differently."
+        ]
+      },
+      "Global climate change": {
+        "ideas": [
+          "Use long-term evidence, model predictions and uncertainty together.",
+          "Climate is a pattern over time, unlike a single day of weather."
+        ],
+        "notes": [
+          "Evidence can include temperature series, melting ice and shifts in rainfall or ecosystems. Scientists compare independent observations and test models against measured data.",
+          "Possible consequences include sea-level rise, altered water availability, habitat shifts and changes to food production. Effects are not identical in every region.",
+          "Uncertainty in the precise size or timing of a change does not mean there is no evidence for the underlying process. When evaluating a claim, consider data quality, timescale, sample coverage and possible alternative explanations."
+        ]
+      },
+      "Carbon footprint": {
+        "ideas": [
+          "Include relevant emissions over the stated system boundary.",
+          "Compare products using the same service or functional unit."
+        ],
+        "notes": [
+          "A product footprint can include raw materials, manufacture, transport, use and disposal. Emissions may be expressed as carbon-dioxide equivalents to compare different greenhouse gases.",
+          "Ways to lower a footprint include using less energy, improving efficiency, reducing demand, changing energy sources and capturing suitable CO2 emissions.",
+          "A reusable item may require more energy to manufacture but less per use over its lifetime. Consider how often it is used and how it is cleaned; a single production number does not settle the whole comparison."
+        ]
+      },
+      "Pollutants from fuels": {
+        "ideas": [
+          "Incomplete combustion can produce CO and soot.",
+          "Sulfur in fuel and high-temperature air reactions give other pollutants."
+        ],
+        "notes": [
+          "When oxygen supply is insufficient, carbon can form carbon monoxide or solid particulates rather than only CO2. Improving mixing and oxygen availability can reduce incomplete combustion.",
+          "Sulfur impurities burn to sulfur dioxide. In hot engines, nitrogen and oxygen from the air can react to form nitrogen oxides, even if the fuel contains no nitrogen.",
+          "Distinguish the source of each pollutant. Carbon dioxide is associated with climate change; carbon monoxide is acutely toxic; particulates and acidic gases have different health or environmental effects."
+        ]
+      },
+      "Effects of pollutants": {
+        "ideas": [
+          "CO reduces oxygen transport in blood.",
+          "SO2 and nitrogen oxides can contribute to acid rain; particulates affect lungs and sunlight."
+        ],
+        "notes": [
+          "Carbon monoxide binds strongly to haemoglobin, reducing the blood capacity to carry oxygen. It is not the same gas as carbon dioxide and need not be visibly smoky.",
+          "Sulfur dioxide and nitrogen oxides dissolve or react in atmospheric water to produce acidic conditions, damaging organisms and materials. Particulates can cause respiratory harm and reduce sunlight reaching the surface.",
+          "For an exam explanation, pair one pollutant with its specific mechanism and consequence. General phrases such as pollution is bad do not show which chemical process causes the harm."
+        ]
+      }
+    }
+  },
+  "chem_resources": {
+    "key_ideas": [
+      "A resource is finite or renewed on a useful timescale depending on how it is replaced.",
+      "Potable water is safe to drink; it need not be chemically pure.",
+      "Freshwater treatment uses filtration and sterilisation; desalination requires energy.",
+      "Sewage treatment separates solids and uses biological processes.",
+      "Higher only: bioleaching and phytomining can recover metals from low-grade sources.",
+      "Life cycle assessments include extraction, manufacture, transport, use and disposal.",
+      "Reduce and reuse can avoid some of the processing needed for recycling.",
+      "Rusting requires both water and oxygen; coatings and sacrificial metals provide different protection.",
+      "Alloy composition and polymer structure help explain properties and uses.",
+      "A composite combines a matrix and reinforcement.",
+      "The Haber process makes ammonia using nitrogen, hydrogen and an iron catalyst.",
+      "Higher only: industrial temperature and pressure compromise rate, yield, energy and cost.",
+      "NPK fertilisers supply the plant nutrients nitrogen, phosphorus and potassium."
+    ],
+    "topics": {
+      "Resources and sustainability": {
+        "ideas": [
+          "Renewable means replaced on a useful human timescale.",
+          "Sustainability includes future availability and environmental and social consequences."
+        ],
+        "notes": [
+          "Timber can be renewable if growth replaces harvesting. A resource used faster than it is replenished can still become depleted locally. Metal ores and fossil fuels are finite on ordinary human timescales.",
+          "Chemistry can improve extraction, efficiency and material substitution, but every route has energy and waste considerations.",
+          "In a decision question identify a benefit, a cost and a justified conclusion using the supplied evidence. A material being natural does not automatically make its use sustainable or harmless."
+        ]
+      },
+      "Potable water": {
+        "ideas": [
+          "Potable water has safe levels of microbes and dissolved substances.",
+          "Filtration, sterilisation and desalination solve different problems."
+        ],
+        "notes": [
+          "For freshwater, filter out insoluble solids and sterilise using chlorine, ozone or ultraviolet treatment as appropriate. Dissolved salts are not removed by an ordinary filter paper.",
+          "Seawater needs desalination, using processes such as distillation or reverse osmosis. Distillation collects condensed water; reverse osmosis uses pressure across a membrane.",
+          "Both methods require energy. Potable water contains some dissolved substances; distilled water is much purer chemically but is not defined solely by the word potable. Explain the contamination being removed at each step."
+        ]
+      },
+      "Waste water treatment": {
+        "ideas": [
+          "Screening and settling remove larger objects and suspended solids.",
+          "Biological treatment breaks down organic waste."
+        ],
+        "notes": [
+          "After screening and sedimentation, sludge is separated from liquid effluent. Anaerobic digestion treats sludge and can produce useful biogas; aerobic treatment uses oxygen and microorganisms to break down material in the effluent.",
+          "Industrial wastewater may contain specific chemicals that need extra removal or neutralisation before discharge.",
+          "The liquid being clear does not prove it is safe or potable: dissolved chemicals and microbes may remain. Identify why each step is needed rather than treating settlement as complete purification."
+        ]
+      },
+      "Bioleaching and phytomining": {
+        "ideas": [
+          "Higher only: both methods can recover metal compounds from low-grade sources.",
+          "Higher only: further processing is needed to obtain the metal."
+        ],
+        "notes": [
+          "In bioleaching, bacteria help produce soluble copper compounds from ore. The resulting leachate can be processed by displacement with a suitable metal or by electrolysis.",
+          "In phytomining, plants take up metal compounds. Harvesting and burning the plants concentrates metal compounds in the ash, which is then processed.",
+          "Compare lower operating temperatures or access to poor ores with slow production, land use and leachate management. The plants or bacteria do not simply excrete ready-pure copper metal."
+        ]
+      },
+      "Life cycle assessment": {
+        "ideas": [
+          "Choose a defined product function and track every life stage.",
+          "Weighting impacts introduces choices and possible subjectivity."
+        ],
+        "notes": [
+          "Include raw-material extraction, production, packaging, transport, use, maintenance and disposal or recycling. Compare energy, water, emissions and resource consumption with consistent boundaries.",
+          "For a reusable bottle, include washing and realistic reuse numbers rather than only its manufacturing energy. The electricity source and transport distance can change the result.",
+          "Some impacts are difficult to put on one common scale and data may be incomplete. State assumptions and explain why a conclusion could change if important inputs changed."
+        ]
+      },
+      "Reduce, reuse and recycle": {
+        "ideas": [
+          "Reducing demand avoids some manufacture entirely.",
+          "Reusing keeps an item in use; recycling reprocesses its material."
+        ],
+        "notes": [
+          "Metals can often be separated and remelted, reducing demand for new ore extraction. The collection, sorting and heating still use energy. Glass can be reused as containers or melted and remade.",
+          "Contamination and mixed materials can make recycling more difficult. A composite may be strong and light but harder to separate into pure components.",
+          "Compare overall consequences rather than assuming recycling has zero impact. A durable reused product can be useful only if it actually replaces new products and is cleaned or transported sensibly."
+        ]
+      },
+      "Corrosion and prevention": {
+        "ideas": [
+          "Rusting of iron needs oxygen and water together.",
+          "A barrier blocks contact; sacrificial protection uses a more reactive metal."
+        ],
+        "notes": [
+          "Paint, oil, grease and plastic coatings form barriers. If a simple barrier is scratched, exposed iron can rust. Galvanising coats iron with zinc, which also reacts preferentially when some iron is exposed.",
+          "In a comparison test, remove water using a drying agent or prevent oxygen entering the water as specified. Control other conditions so the need for both substances can be inferred.",
+          "Do not say that any metal coating gives sacrificial protection. The protective metal must be more reactive than iron; a less reactive coating works only as an intact barrier."
+        ]
+      },
+      "Useful alloys": {
+        "ideas": [
+          "Different alloying elements and proportions change properties.",
+          "Link an alloy property to the intended use."
+        ],
+        "notes": [
+          "Bronze contains copper and tin; brass contains copper and zinc. Steel is based on iron with carbon and often other elements. Stainless steel uses additions that improve corrosion resistance.",
+          "Gold is often alloyed for harder jewellery, while aluminium alloys combine low density with useful strength.",
+          "The different atom sizes disrupt regular layers and hinder sliding, helping explain increased hardness. Distinguish hardness from resistance to corrosion: an alloy can be harder without automatically resisting every chemical attack.",
+          "Pure gold is 24 carat. The gold fraction of an 18-carat alloy is 18/24=0.75, or 75%. High-carbon steel is strong but relatively brittle; low-carbon steel is softer and easier to shape. Chromium and nickel additions give stainless steel corrosion resistance useful for cutlery."
+        ]
+      },
+      "Ceramics, polymers and composites": {
+        "ideas": [
+          "Thermoplastic chains can move on heating; thermosetting polymers have cross-links.",
+          "A composite combines a continuous matrix with reinforcing material."
+        ],
+        "notes": [
+          "Clay ceramics and glass are usually hard, heat-resistant and brittle. Soda-lime glass is made using sand, sodium carbonate and limestone; borosilicate glass withstands thermal changes better.",
+          "A thermosoftening polymer can soften and be reshaped because chains are not held by extensive covalent cross-links. A thermoset has a network that prevents ordinary remoulding.",
+          "In glass-fibre reinforced polymer, fibres improve strength while the polymer matrix holds them in place. Describe both components and their roles instead of treating a composite as simply another pure compound.",
+          "Low-density poly(ethene) is made at high temperature and pressure with a trace of oxygen. Its branched chains pack less closely. High-density poly(ethene) uses a catalyst at lower temperature and pressure; straighter chains pack more closely, producing greater density and stronger attractions between neighbouring chains."
+        ]
+      },
+      "The Haber process": {
+        "ideas": [
+          "N2 + 3H2 <-> 2NH3 is a reversible exothermic reaction.",
+          "An iron catalyst and industrial conditions allow useful production rates."
+        ],
+        "notes": [
+          "Nitrogen is obtained from air; hydrogen is commonly made using natural gas and steam. The gases pass over an iron catalyst at roughly 450 C and 200 atmospheres in the syllabus model.",
+          "Cooling condenses ammonia so it can be removed, while unreacted nitrogen and hydrogen are recycled. Recycling improves overall raw-material use rather than requiring complete conversion in one pass.",
+          "Higher only: the chosen pressure and temperature balance equilibrium yield against rate, energy, equipment strength and cost. A catalyst does not increase the equilibrium ammonia fraction."
+        ]
+      },
+      "Optimising Haber conditions": {
+        "ideas": [
+          "Higher only: lower temperature favours the exothermic ammonia yield but slows rate.",
+          "Higher only: higher pressure favours the smaller gas-molecule total but raises cost."
+        ],
+        "notes": [
+          "The reactant side has four gas molecules by coefficient and the product side two. Higher pressure therefore favours ammonia and can increase collision rate, but strong pressure vessels and compression consume resources.",
+          "At low temperature the equilibrium yield is larger but production can be too slow. An intermediate temperature and iron catalyst give a practical compromise.",
+          "Removal of cooled ammonia and recycling of unreacted gases improve overall use of feedstock. State that catalyst speeds approach to equilibrium without changing its position."
+        ]
+      },
+      "NPK fertilisers": {
+        "ideas": [
+          "Nitrogen, phosphorus and potassium are needed for healthy plant growth.",
+          "Different crops and soils need different nutrient proportions."
+        ],
+        "notes": [
+          "Ammonia can react with nitric acid to form ammonium nitrate: NH3 + HNO3 -> NH4NO3. Other acids give other ammonium salts. Industrial manufacture may combine several nutrients in controlled ratios.",
+          "Potassium salts can be mined. Phosphate rock is treated with acids to make more useful soluble phosphate compounds; unprocessed rock is not equally useful to plants.",
+          "A school neutralisation and crystallisation route is batch-based, while industrial production may be continuous and designed for energy recovery and large throughput. Fertiliser evaluation should also consider loss to waterways and efficient use.",
+          "Nitric acid and ammonia make ammonium nitrate; phosphoric acid and ammonia make ammonium phosphates. Treating phosphate rock with sulfuric acid makes single superphosphate, while phosphoric acid produces triple superphosphate. Potassium chloride and potassium sulfate can be obtained from mined deposits."
+        ]
+      }
+    }
+  },
+  "chem_key": {
+    "key_ideas": [
+      "Use particle, electron and bonding models to explain observations.",
+      "Conserve atoms and charge when writing equations.",
+      "Distinguish energy transfer from the rate at which it happens.",
+      "Treat rate, equilibrium yield, percentage yield and atom economy as separate concepts.",
+      "Use precise units, equations and controlled conditions to justify calculations.",
+      "Connect an experimental observation to a chemical inference and its limitations.",
+      "Choose separation and analytical techniques for the actual species present.",
+      "Evaluate material and industrial choices over a full life cycle.",
+      "Label Higher-only mole, electron-transfer and equilibrium explanations correctly."
+    ],
+    "topics": {
+      "Chemistry key ideas": {
+        "ideas": [
+          "Structure explains properties; reactions rearrange atoms and transfer energy.",
+          "Evidence, equations and quantitative checks work together."
+        ],
+        "notes": [
+          "When explaining an observation, identify the particles, the relevant forces or bonds and what changes. For example, melting a molecular solid overcomes intermolecular attractions rather than breaking every covalent bond.",
+          "For a calculation, write the equation, convert the units, substitute values, keep intermediate precision and check whether the size of the answer is plausible.",
+          "For an evaluation, use a specific benefit and limitation backed by data. Separate a direct observation from the model used to explain it; uncertainty does not remove the need for a justified conclusion."
+        ]
+      }
+    }
+  },
+  "chem_practicals": {
+    "key_ideas": [
+      "Know the purpose of each apparatus choice as well as the sequence of steps.",
+      "Measure the independent variable and a clear dependent outcome; control other important variables.",
+      "Use repeats and investigate anomalous results before calculating means.",
+      "Salt preparation uses excess solid, filtration and controlled crystallisation.",
+      "Titration uses a pipette, burette and appropriate indicator; Higher-only calculations use mole ratios.",
+      "Electrolysis observations identify products at the two electrodes separately.",
+      "Temperature-change work needs insulation and consistent solution volumes.",
+      "Rate experiments need a reproducible end point or a direct gas-volume measurement.",
+      "Chromatography needs a pencil line above the solvent and a marked solvent front.",
+      "Ion tests use fresh portions and correct acidification to avoid contamination.",
+      "Water work distinguishes dissolved solids, purity and successful condensation of a solvent."
+    ],
+    "topics": {
+      "Making a pure soluble salt": {
+        "ideas": [
+          "React warm dilute acid with an excess insoluble oxide or carbonate.",
+          "Filter, partially evaporate, cool, crystallise, rinse and dry."
+        ],
+        "notes": [
+          "For copper sulfate, warm dilute sulfuric acid gently and add copper oxide in small portions with stirring until some black solid remains. This indicates that the acid has been consumed.",
+          "Filter to remove excess solid, retaining the blue filtrate. Gently concentrate it, then cool to crystallise the salt. Rinse crystals with a small amount of cold distilled water and dry them.",
+          "Explain each step: excess removes residual acid; filtration removes insoluble reagent; cooling lowers solubility. Do not boil the filtrate to complete dryness or claim filtering removes dissolved acid."
+        ]
+      },
+      "Acid-alkali titration": {
+        "ideas": [
+          "A pipette measures the fixed volume and a burette measures the titre.",
+          "Use a rough trial then repeat accurate runs approaching the end point dropwise."
+        ],
+        "notes": [
+          "Rinse the pipette with the solution it measures and the burette with the solution it will deliver. Use a filler, remove the funnel, clear the jet and read the meniscus at eye level.",
+          "Swirl the flask and use a white tile to see the indicator end point. Distilled water washing the flask sides changes volume but not the amount of reactant.",
+          "Example concordant titres 24.20 and 24.25 cm^3 give mean 24.225 cm^3 before appropriate rounding. Use the stated concordance criterion. For a pure salt preparation, repeat the measured neutralisation without indicator."
+        ]
+      },
+      "Concentration by titration": {
+        "ideas": [
+          "Higher only: volume conversion and reaction coefficients are essential.",
+          "Higher only: show the known moles, reacting ratio and unknown concentration separately."
+        ],
+        "notes": [
+          "If 25.0 cm^3 of 0.100 mol/dm^3 NaOH reacts with 31.25 cm^3 HCl, known moles=0.100*0.0250=0.00250. The 1:1 ratio gives the same HCl amount; concentration=0.00250/0.03125=0.0800 mol/dm^3.",
+          "For sulfuric acid use two moles NaOH per mole H2SO4. Using the same moles on both sides without checking the equation gives a factor-of-two error.",
+          "Convert to g/dm^3 only after finding molar concentration, by multiplying by the relevant molar mass."
+        ]
+      },
+      "Aqueous electrolysis": {
+        "ideas": [
+          "Use the specified electrolyte and electrode materials.",
+          "Observe and test products at each electrode separately."
+        ],
+        "notes": [
+          "Use an appropriate low-voltage DC supply and inert electrodes where required. Place the electrodes in the solution without allowing them to touch, then record changes at the cathode and anode.",
+          "Collect small gas samples using the instructed arrangement and apply the appropriate gas test. Copper sulfate can produce a copper coating at an inert cathode; water competes in many aqueous electrolytes.",
+          "For a fair comparison control solution concentration, electrode area, separation, voltage or current and time as relevant. Do not infer molten-salt products simply because the dissolved salt has the same name."
+        ]
+      },
+      "Temperature changes in reactions": {
+        "ideas": [
+          "Insulate the reaction vessel and measure starting temperature before mixing.",
+          "Use the highest or lowest consistent temperature to find the change."
+        ],
+        "notes": [
+          "For an acid-alkali comparison, use a polystyrene cup supported in a beaker, matched measured volumes and a thermometer or probe. Mix, stir and record the temperature at suitable intervals.",
+          "Control starting temperature, total volume, concentration and insulation. Repeat runs and compare the temperature changes rather than raw final temperatures when starts differ.",
+          "Heat exchange with the room and the cup can reduce the observed change. Record a cooling trend if asked to estimate a corrected peak. Do not call the cup perfectly insulated or assume every joule heats only the measured liquid."
+        ]
+      },
+      "Concentration and rate": {
+        "ideas": [
+          "Change concentration while controlling total volume, temperature and reactant amounts appropriately.",
+          "Measure a consistent end point or a product-versus-time curve."
+        ],
+        "notes": [
+          "In sodium thiosulfate and acid, sulfur cloudiness can hide a marked cross. Start timing on mixing and stop at the same visibility criterion. Use the instructed ventilated setup because sulfur dioxide can be produced.",
+          "Diluting a stock with measured water can vary concentration while keeping a chosen total solution volume fixed. Repeat measurements; the end point is judged by an observer and has uncertainty.",
+          "For fixed cloudiness under matched conditions, 1/time is a comparative rate indicator, not a direct amount-per-second measurement. A gas syringe can give a more direct volume-time record in a suitable gas-producing reaction."
+        ]
+      },
+      "Paper chromatography": {
+        "ideas": [
+          "Use small spots on a pencil baseline above the solvent level.",
+          "Mark the solvent front immediately and measure to each spot centre."
+        ],
+        "notes": [
+          "Let starting spots dry before adding further small amounts if needed. Suspend the paper so the solvent rises through it, and keep the container conditions consistent.",
+          "Calculate Rf using distances from the same baseline. For a 2.4 cm spot and 8.0 cm front, Rf=0.30. Compare standards and unknowns under the same solvent and stationary-phase conditions.",
+          "Overlarge spots smear; a submerged baseline dissolves the sample into the reservoir; pen ink introduces extra dyes. A solvent reaching the paper top prevents a reliable final front measurement."
+        ]
+      },
+      "Identifying ions": {
+        "ideas": [
+          "Use separate portions and clean apparatus for each test.",
+          "Record reagent, observation and justified inference as distinct items."
+        ],
+        "notes": [
+          "Begin with relevant flame tests or sodium hydroxide tests for cations. For anions, test carbonates with dilute acid and limewater, halides with nitric acid then silver nitrate, and sulfates with hydrochloric acid then barium chloride.",
+          "The acid must not introduce the ion being tested: hydrochloric acid would invalidate a chloride test, while sulfuric acid would invalidate a sulfate test.",
+          "Use evidence combinations if white precipitates are ambiguous. A negative observation should be interpreted with detection limits and reagent quality in mind rather than assuming a substance can never contain that ion."
+        ]
+      },
+      "Water analysis and purification": {
+        "ideas": [
+          "Evaporating a small measured sample can reveal dissolved solids.",
+          "Distillation collects purified solvent, whereas filtration only removes insoluble material."
+        ],
+        "notes": [
+          "Compare water samples using pH and a suitable dissolved-solid residue measurement, using clean pre-weighed apparatus if a mass is needed. An ordinary filter does not remove dissolved sodium chloride.",
+          "In distillation, heat the sample, cool the vapour in a condenser and collect the distillate separately. Arrange the thermometer to measure the leaving vapour where the method requires it.",
+          "A colourless sample is not proof of potability. Dissolved contaminants or microbes can be invisible; evaluate which treatment actually removes each concern and the energy needed for purification."
+        ]
+      }
+    }
+  },
+  "chem_skills": {
+    "key_ideas": [
+      "Separate observations from model-based inferences.",
+      "Make a testable prediction and identify variables before collecting data.",
+      "Choose instrument range and resolution suited to the expected change.",
+      "Use controls and repeat measurements to separate effects from chance variation.",
+      "Treat random scatter differently from systematic bias.",
+      "Describe trends with evidence and use appropriate graphs.",
+      "Show units, significant figures and conversions in every calculation.",
+      "Higher-only mole or equilibrium reasoning remains labelled even in a mixed-topic investigation."
+    ],
+    "topics": {
+      "Developing scientific explanations": {
+        "ideas": [
+          "A claim needs evidence and a chemical model.",
+          "Explain how an observation supports a conclusion, and what remains uncertain."
+        ],
+        "notes": [
+          "Example: gas evolved from carbonate plus acid turns limewater cloudy. The observation supports carbon dioxide identification; it does not by itself identify every other ion in the original solid.",
+          "Use particles and bonding to explain a macroscopic pattern, such as a molecular substance boiling at low temperature because intermolecular forces are weak.",
+          "Consider alternative explanations and repeatable predictions. A theory is not simply a guess, and one anomalous measurement does not necessarily disprove an otherwise supported model."
+        ]
+      },
+      "Designing an investigation": {
+        "ideas": [
+          "Identify independent, dependent and control variables.",
+          "Choose repeatable measurements and suitable comparison conditions."
+        ],
+        "notes": [
+          "For acid concentration and carbonate reaction rate, change the acid concentration and measure gas volume against time. Control carbonate mass and surface area, total solution volume and temperature.",
+          "Choose enough concentrations to reveal a trend and repeats to estimate variation. Use the same start and stop procedure and apparatus with an appropriate scale.",
+          "A comparison is unfair if higher concentration is also paired with finer powder and warmer conditions. State a realistic control method rather than saying keep everything the same."
+        ]
+      },
+      "Analysing data and evidence": {
+        "ideas": [
+          "Use appropriate averages, graph scales and uncertainty.",
+          "Distinguish correlation from a demonstrated chemical cause."
+        ],
+        "notes": [
+          "Plot continuous variables on suitable axes with units; choose a best-fit line or curve that reflects the data. Calculate a gradient using well-separated points on the fit rather than a tiny triangle.",
+          "Investigate an anomalous result before excluding it. Repeats can show random scatter; a calibrated instrument offset can bias all values together.",
+          "Compare competing conclusions with the size of the uncertainty. If two measured values overlap within the expected uncertainty, do not claim a definite difference based only on a tiny numerical change."
+        ]
+      },
+      "Terminology and measurements": {
+        "ideas": [
+          "Accuracy concerns closeness to a true value; precision concerns spread.",
+          "Resolution is the smallest scale interval or displayed increment."
+        ],
+        "notes": [
+          "A balance displaying 0.01 g has finer resolution than one displaying 0.1 g, but calibration and technique still affect accuracy. Precise repeated values may all be biased.",
+          "Report a burette titre as the difference of two readings and follow the question convention for reading uncertainties. Keep units in tables and label calculated quantities separately.",
+          "A repeatable result can be obtained by the same method; reproducibility concerns agreement across different operators or apparatus. Use these words carefully rather than treating them as interchangeable praise."
+        ]
+      },
+      "Mathematical skills": {
+        "ideas": [
+          "Convert units before substituting and show the complete equation.",
+          "Use proportional reasoning and appropriate significant figures."
+        ],
+        "notes": [
+          "Examples: 250 cm^3=0.250 dm^3, 35 mg=0.035 g, and 0.040 mol at 24 dm^3/mol occupies 0.96 dm^3 (moles and gas-volume reasoning: higher only).",
+          "For percentage change, divide the change by the original value before multiplying by 100. For a gradient, divide a vertical change by the corresponding horizontal change with their units.",
+          "Keep extra digits during intermediate steps and round the final answer sensibly. Check orders of magnitude: a cm^3-to-dm^3 mistake changes an answer by a factor of 1000."
+        ]
+      }
+    }
+  }
+}

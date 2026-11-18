@@ -13,6 +13,7 @@ typedef struct {
     const char *formula;
     const char *labels[MAX_FIELDS], *values[MAX_FIELDS];
     const MathsDetail *detail;
+    const char *key_ideas;
 } Topic;
 
 typedef struct { const char *title; const Topic *topics; int count; } Chapter;
