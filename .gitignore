@@ -1,0 +1,30 @@
+# Generated toolchain output and release assets (published via GitHub Releases)
+/build/
+/release/
+/verification/
+*.o
+*.elf
+*.map
+*.g3a
+*.bin
+# Calculator state and local test output
+numai.sav
+numai.bak
+numai.tmp
+storage/
+__pycache__/
+*.pyc
+.DS_Store
+# Credentials, private configuration and editor state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+credentials*.json
+secrets*.json
+.vscode/
+.idea/
+# This synthetic historical fixture is intentionally version controlled.
+!/tests/fixtures/v0.1.1.sav
