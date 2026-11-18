@@ -18,6 +18,14 @@ static bool physics_notation(void) {
 }
 
 static bool math_word(const char *word, size_t length) {
+    /* Short connecting words are prose when followed by a space. Keep them
+     * outside a neighbouring structured unit/formula so its formatter cannot
+     * remove that prose spacing ("in mol/dm^3", "cm^3 to dm^3"). Symbols such
+     * as Is and products inside sqrt(to) remain valid mathematical tokens. */
+    if (length == 2 && word[2] == ' ' &&
+        (!memcmp(word,"in",2) || !memcmp(word,"to",2) || !memcmp(word,"by",2) ||
+         !memcmp(word,"of",2) || !memcmp(word,"or",2) || !memcmp(word,"is",2) ||
+         !memcmp(word,"at",2) || !memcmp(word,"on",2))) return false;
     if (length <= 2) return true;
     static const char *const symbols[] = {
         "sin", "cos", "tan", "asin", "acos", "atan", "sqrt", "log", "exp", "abs", "min",

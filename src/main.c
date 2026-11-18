@@ -209,7 +209,14 @@ static int styled_text(int x, int y, const char *text, eadk_color_t ink, eadk_co
         "cathode", "anode", "salt", "hydrogen", "oxygen", "carbon dioxide",
         "reactivity", "displacement", "neutralisation", "alkali", "base", "acid",
         "Detailed explanation and examples", "OIL RIG", "ionises", "concordant", "titration", "filtrate", "crystals",
-        "cryolite", "halide", "higher only", "Key Ideas", "Oxidation Is Loss", "Reduction Is Gain"
+        "cryolite", "halide", "higher only", "Key Ideas", "Oxidation Is Loss", "Reduction Is Gain",
+        "kinetic", "gravitational", "elastic", "efficiency", "power", "temperature",
+        "internal energy", "specific heat capacity", "latent heat", "resistance",
+        "potential difference", "series", "parallel", "alpha", "beta", "gamma", "isotopes",
+        "ionisation", "contamination", "irradiation", "background", "acceleration",
+        "frequency", "wavelength", "amplitude", "fusion", "fission",
+        "Worked example", "Worked examples", "Exam check", "Required practical", "Practical",
+        "Transfer pathways", "Heating curves", "Compare properties", "Transformer power"
     };
     const char *at = text;
     while (*at && x < EADK_SCREEN_WIDTH) {
@@ -357,7 +364,7 @@ static void wrap(const char *text, int width, bool highlight, int *count) {
         const char *start = text;
         int length = 0, space = -1;
         while (text[length] && text[length] != '\n' && length < limit &&
-               styled_width(start, length + 1) <= EADK_SCREEN_WIDTH - 28) {
+               casio_width(start, length + 1, false, false) <= EADK_SCREEN_WIDTH - 28) {
             if (text[length] == ' ') space = length;
             length++;
         }
@@ -658,6 +665,21 @@ static Selection *selection_for(Page menu) {
     }
 }
 
+static void unit_text(int x, int mid, const char *text, eadk_color_t ink, eadk_color_t paper) {
+    MathCanvas canvas = {math_text, rectangle, ink, paper};
+    int limit = EADK_SCREEN_WIDTH - 14;
+    while (*text && x < limit) {
+        if (*text == ' ') { x += CHAR_WIDTH; text++; continue; }
+        const char *end = text + strcspn(text, " ");
+        char formula[128];
+        format_formula(text, end, false, true, formula, sizeof(formula));
+        MathBox box = measure_math(formula, limit - x);
+        paint_math(formula, limit - x, x, mid, &canvas);
+        x += box.width;
+        text = end;
+    }
+}
+
 static void draw_list(const char *title, const char *tag, bool filled) {
     const int y0 = 25, row_height = 20;
     const int rows = (FOOTER - y0) / row_height;
@@ -686,7 +708,9 @@ static void draw_list(const char *title, const char *tag, bool filled) {
             string_at(21, y+3, setting_name, active ? Blue : Ink, paper);
             string_at(EADK_SCREEN_WIDTH-14-casio_width(setting_value,-1,false,false),
                       y+3, setting_value, active ? Blue : Ink, paper);
-        } else title_with_tier(21, y + 3, label, TEXT_WIDTH, active ? Blue : Ink, paper);
+        } else if (page == UnitFrom || page == UnitTo)
+            unit_text(21, y + 10, label, active ? Blue : Ink, paper);
+        else title_with_tier(21, y + 3, label, TEXT_WIDTH, active ? Blue : Ink, paper);
     }
     if (page == SessionList)
         string_at(8, 186, session_store.records ? "Auto-saves to Casio USB storage." :
@@ -705,7 +729,6 @@ static const struct { const char *key; const char *function; } shortcuts[] = {
     {"TOOLS", "Open Equations and CAS"},
     {"SHIFT+EXE", "Open or close NumAI menu"},
     {"OK / EXE", "Open item or calculate"},
-    {"OK (Chem notes)", "Toggle Key ideas / full notes"},
     {"UP / DOWN", "Move, scroll or change field"},
     {"BACK / HOME", "Go back / return to launcher"},
     {"x/\030/T", "Enter x; ALPHA enters A"},
@@ -916,11 +939,11 @@ static void draw_science_result(void) {
 
 static void draw_unit_conversion(void) {
     const Unit *units = selected_unit_group()->units;
-    char title[60];
-    snprintf(title, sizeof(title), "%s to %s", units[unit_from.row].symbol, units[unit_to.row].symbol);
     header("Unit conversions", NULL, true);
     clipped(8, 30, selected_unit_group()->name, TEXT_WIDTH, Ink, White);
-    clipped(8, 48, title, TEXT_WIDTH, Blue, White);
+    unit_text(8, 55, units[unit_from.row].symbol, Blue, White);
+    string_at(EADK_SCREEN_WIDTH/2 - 13, 48, "to", Grey, White);
+    unit_text(EADK_SCREEN_WIDTH/2 + 24, 55, units[unit_to.row].symbol, Blue, White);
     if (page == UnitValue) {
         int height = expression_height(&unit_input, EADK_SCREEN_WIDTH - 14, 66, false);
         expression_entry(7, 74, EADK_SCREEN_WIDTH - 14, height, &unit_input, "Enter a number or expression", true, false);
@@ -1087,10 +1110,6 @@ static void draw(void) {
                 wrap_topic_reading();
             }
             reader(30, FOOTER - 3);
-            if (reading_is_topic() && topic()->key_ideas) {
-                footer(read_content == topic()->key_ideas ? "OK: full notes   TOOLS: equations   BACK" : "OK: Key ideas    TOOLS: equations   BACK");
-                break;
-            }
             footer(reading_is_topic() && related_count ? "TOOLS: related equations   UP/DOWN   BACK" :
                    "UP/DOWN: scroll    BACK: return");
             break;
@@ -1565,11 +1584,7 @@ static void back(void) {
         case CalcExtras: page = CalcHistory; break;
         case Shortcuts: case History: page = GeneralMenu; break;
         case HistoryResult: page = History; break;
-        case Reading:
-            if (reading_is_topic() && topic()->key_ideas && read_content == topic()->key_ideas) {
-                read_content = topic()->course; read_offset = 0;
-            } else page = reading_parent;
-            break;
+        case Reading: page = reading_parent; break;
         case Search: page = search_parent; break;
         case RelatedEquations:
             page = related_parent;
@@ -2281,12 +2296,6 @@ static bool handle_key(int key, bool shifted, bool alphabetic) {
             int *offset = page == ToolOutput ? &tool_offset : &history_offset;
             *offset += key == eadk_key_up ? -1 : 1;
         }
-        return true;
-    }
-    if (page == Reading && reading_is_topic() && topic()->key_ideas &&
-        (key == eadk_key_ok || key == eadk_key_exe) && !function && !alphabetic) {
-        read_content = read_content == topic()->key_ideas ? topic()->course : topic()->key_ideas;
-        read_offset = 0;
         return true;
     }
     if (page == Reading || page == Result) {
