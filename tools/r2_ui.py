@@ -6,20 +6,20 @@ import os
 import subprocess
 from PIL import Image
 root=Path(__file__).resolve().parents[1]
-base=root/'verification/ui-v0.1.3-r2';base.mkdir(parents=True,exist_ok=True)
+base=root/'verification/ui-v0.1.4';base.mkdir(parents=True,exist_ok=True)
 emulator=os.environ.get('CASIO_EMULATOR','/tmp/numplay-toolchain/emu-build/emucasiocalc')
 def run(name,script):
     folder=base/name;folder.mkdir(exist_ok=True)
     for file in ['numai.sav','numai.bak','numai.tmp']:
         (folder/'storage/fls0'/file).unlink(missing_ok=True)
-    p=subprocess.run([emulator,'--headless','--model','cg50','--keys','scale 1, wait 0.7s, '+script.replace('shot ','wait 0.5s, shot '),root/'release/numai-0.1.3-r2.g3a'],cwd=folder,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=90)
+    p=subprocess.run([emulator,'--headless','--model','cg50','--keys','scale 1, wait 0.7s, '+script.replace('shot ','wait 0.5s, shot '),root/'release/numai-casio-v0.1.4.g3a'],cwd=folder,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=90)
     (folder/'run.log').write_text(p.stdout)
     assert p.returncode==0 and 'add-in exited after' in p.stdout and 'stopped with an error' not in p.stdout,p.stdout
     return folder
 for name,group,from_row,to_row,number,answer in [
     ('area',1,1,3,'25000','2.5 m^2'),('volume',2,1,2,'2500','2.5 dm^3'),
     ('density',18,1,0,'2.5','2500 kg/m^3')]:
-    script='OPTN, '+'DOWN, '*3+'EXE, '+'DOWN, '*group+'EXE, shot from.png, '+'DOWN, '*from_row+'EXE, shot to.png, '+'DOWN, '*to_row+'EXE, shot input.png, '
+    script='OPTN, '+'DOWN, '*4+'EXE, '+'DOWN, '*group+'EXE, shot from.png, '+'DOWN, '*from_row+'EXE, shot to.png, '+'DOWN, '*to_row+'EXE, shot input.png, '
     script+=', '.join('DP' if ch=='.' else ch for ch in number)+', EXE, shot result.png, MENU'
     folder=run(name,script)
     raw=(folder/'storage/fls0/numai.sav').read_bytes()

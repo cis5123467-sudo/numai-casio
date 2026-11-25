@@ -1,4 +1,5 @@
 #include "eadk.h"
+#include "palette.h"
 #include <gint/display.h>
 #include <gint/keyboard.h>
 #include <gint/clock.h>
@@ -81,7 +82,7 @@ void casio_text(int x, int y, const char *text, uint16_t ink, uint16_t paper,
     native_symbols(text, -1, native);
     int px = x;
     int py = y + (small ? 0 : 1);
-    if (paper == 0xffb8) {
+    if (paper == PaleGold) {
         int width;
         dsize(native, &font, &width, NULL);
         drect(px, py, px + width - 1, py + font.data_height - 1, paper);

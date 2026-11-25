@@ -10,7 +10,7 @@ from PIL import Image, ImageChops
 
 root = Path(__file__).resolve().parents[1]
 emulator = Path(os.environ.get("CASIO_EMULATOR", "/tmp/numplay-toolchain/emu-build/emucasiocalc"))
-addin = root / "release/numai-0.1.3-r2.g3a"
+addin = root / "release/numai-casio-v0.1.4.g3a"
 
 def run(folder, script):
     folder.mkdir(parents=True, exist_ok=True)
@@ -44,7 +44,7 @@ assert ImageChops.difference(Image.open(calc/"result.png"), Image.open(calc/"res
 print("Factorials, automatic parentheses, saved results and reopening passed", flush=True)
 
 cas = base / "cas"
-run(cas, "OPTN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, EXE, EXE, wait 0.4s, shot factorise.png, MENU")
+run(cas, "OPTN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, EXE, EXE, wait 0.4s, shot factorise.png, MENU")
 assert "(x - 2)(x - 3)" in records(cas)["session_default.py"]
 print("CAS factorisation passed", flush=True)
 
@@ -85,7 +85,7 @@ run(chemistry, "OPTN, shot cas.png, DOWN, DOWN, EXE, shot equations.png, DOWN, E
 assert "N = 6" in records(chemistry)["session_default.py"]
 
 converter = base / "converter"
-run(converter, "OPTN, DOWN, DOWN, DOWN, EXE, EXE, DOWN, DOWN, DOWN, EXE, DOWN, DOWN, DOWN, DOWN, EXE, "
+run(converter, "OPTN, DOWN, DOWN, DOWN, DOWN, EXE, EXE, DOWN, DOWN, DOWN, EXE, DOWN, DOWN, DOWN, DOWN, EXE, "
     "2, 5, shot input.png, EXE, shot result.png, MENU")
 assert "2.5 dm" in records(converter)["session_default.py"]
 
@@ -93,7 +93,7 @@ extras = base / "extras"
 run(extras, "1, DIV, 3, EXE, UP, RIGHT, EXE, shot extra-results.png, MENU")
 
 tools = base / "tools"
-run(tools, "OPTN, DOWN, DOWN, DOWN, DOWN, EXE, shot rearranger.png, EXE, "
+run(tools, "OPTN, DOWN, DOWN, DOWN, DOWN, DOWN, EXE, shot rearranger.png, EXE, "
     "shot rearranged.png, EXIT, EXIT, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, DOWN, "
     "DOWN, DOWN, DOWN, DOWN, EXE, shot triangle.png, MENU")
 

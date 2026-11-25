@@ -46,6 +46,7 @@ static void refresh_search(void) {
     search_count = search_total = 0;
     search_selection = (Selection){0};
     if (!equation_search) {
+        int direct_count = 0;
         for (int i = 0; i < course_count; i++)
             for (int j = 0; j < courses[i].count; j++) {
                 const Chapter *chapter = &courses[i].chapters[j];
@@ -54,7 +55,18 @@ static void refresh_search(void) {
                     const char *texts[] = {courses[i].title, courses[i].code, chapter->title,
                                            item->title, item->course, item->method,
                                            item->detail ? item->detail->notes : item->example};
-                    if (matches_query(texts, 7)) add_search_match((SearchMatch){i,j,k,false,false});
+                    SearchMatch match = {i,j,k,false,false};
+                    if (matches_query(texts, 4)) {
+                        /* Prefer topic names to mentions in chapter summaries. */
+                        if (direct_count < SEARCH_LIMIT) {
+                            int retained = search_count < SEARCH_LIMIT ? search_count : SEARCH_LIMIT - 1;
+                            memmove(search_matches + direct_count + 1, search_matches + direct_count,
+                                    (size_t)(retained - direct_count) * sizeof(*search_matches));
+                            search_matches[direct_count++] = match;
+                            if (search_count < SEARCH_LIMIT) search_count++;
+                        }
+                        search_total++;
+                    } else if (matches_query(texts, 7)) add_search_match(match);
                 }
             }
         return;
@@ -140,6 +152,35 @@ static void find_related(void) {
     }
 }
 
+static void wrap_organic_examples(const Topic *item) {
+    if (strcmp(course()->code, "8462")) return;
+    size_t section_len = strcspn(item->course, "\n");
+    bool cracking = !strcmp(item->title, "Cracking and alkenes");
+    bool combustion = !strcmp(item->title, "Hydrocarbon trends and burning");
+    bool alkene_reactions = !strcmp(item->title, "Alkene reactions");
+    bool addition = !strcmp(item->title, "Addition polymers");
+    bool weak_acid = !strcmp(item->title, "Carboxylic acid ionisation (higher only)");
+    for (int f = 0; f < organic_family_count; f++) {
+        const OrganicFamily *family = &organic_families[f];
+        for (int m = family->first; m < family->first + family->count; m++) {
+            const OrganicMolecule *molecule = &organic_molecules[m];
+            bool matches = strlen(molecule->section) == section_len &&
+                           !strncmp(item->course, molecule->section, section_len);
+            if (weak_acid) matches = !strcmp(molecule->name, "Ethanoic acid");
+            if ((cracking || alkene_reactions || addition) && !strcmp(molecule->name, "Ethene"))
+                matches = true;
+            if (combustion && !strcmp(molecule->name, "Propane")) matches = true;
+            if (m == OrganicMethylpropane) continue; /* Shown beside butane in these notes. */
+            if (matches && read_length < WRAP_LIMIT)
+                wrapped[read_length++] = (WrappedLine){m == OrganicButane ? OrganicIsomerComparison : m,
+                                                       false, NULL};
+        }
+    }
+    if (!strcmp(item->title, "Crude oil and alkanes"))
+        wrap("Butane and methylpropane share C4H10. Butane has a straight chain and methylpropane has a branch.",
+             TEXT_WIDTH, false, &read_length);
+}
+
 static void wrap_topic_reading(void) {
     if (!reading_is_topic()) {
         wrap(read_content, TEXT_WIDTH, false, &read_length);
@@ -161,6 +202,7 @@ static void wrap_topic_reading(void) {
             wrap("\n", TEXT_WIDTH, false, &read_length);
             wrap(notes, TEXT_WIDTH, false, &read_length);
         } else wrap(read_content, TEXT_WIDTH, false, &read_length);
+        wrap_organic_examples(item);
         if (item->example && !item->method) wrap(item->example, TEXT_WIDTH, false, &read_length);
     } else {
         if (related_count) {

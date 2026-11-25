@@ -8,10 +8,12 @@ import tempfile
 import sys
 root = Path(__file__).resolve().parents[1]
 sdk = Path(os.environ.get('CASIO_SDK','/tmp/numplay-toolchain/prefix'))
-include = subprocess.check_output([sdk/'bin/fxsdk','path','include'],text=True).strip()
+include = os.environ.get('CASIO_HOST_HEADERS')
+if include is None:
+    include = subprocess.check_output([sdk/'bin/fxsdk','path','include'],text=True).strip()
 test = sys.argv[1] if len(sys.argv)>1 else 'native_controls'
 assert test in ['native_controls','chemistry_content','physics_content']
-sources = ['tests/'+test+'.c', *['src/'+name+'.c' for name in ['cas','topics','physics','chemistry','units','solvers','scriptstore','mathview']]]
+sources = ['tests/'+test+'.c', *['src/'+name+'.c' for name in ['cas','topics','physics','chemistry','units','solvers','scriptstore','mathview','organic']]]
 if test in ['chemistry_content','physics_content']: sources.append('tests/pinned_chemistry.c')
 with tempfile.TemporaryDirectory(prefix='numai-controls-') as folder:
     exe = Path(folder)/'controls'

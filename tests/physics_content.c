@@ -31,11 +31,11 @@ int main(void) {
     for(int ch=0;ch<course()->count;ch++) {
         chapter_selection=(Selection){ch,0}; const Chapter *current=chapter(),*expected=&pinned_sciences[0].chapters[ch];
         assert(current->count==expected->count);
-        if(ch<8)assert(!strcmp(current->topics[0].title,"Key Ideas"));
+        assert(!strcmp(current->topics[0].title,"Key Ideas"));
         for(int t=0;t<current->count;t++) {
             topic_selection=(Selection){t,0};const Topic *a=topic(),*b=&expected->topics[t];
             assert(!strcmp(a->title,b->title) && !strcmp(a->course,b->course));
-            assert(!strcmp(a->example,b->example));
+            assert(a->example && b->example ? !strcmp(a->example,b->example) : a->example == b->example);
             page=Topics;choose();assert(page==Reading && read_content==a->course);
             read_length=0;wrap_topic_reading();assert(read_length<WRAP_LIMIT-3);
             if(read_length>maxlines)maxlines=read_length;
@@ -47,7 +47,7 @@ int main(void) {
             count++;
         }
     }
-    assert(count==129);
+    assert(count==131);
     assert(!math_word("in mol",2) && !math_word("to dm",2));
     assert(math_word("Is ",2) && math_word("to)",2));
     int links=0;
@@ -72,5 +72,5 @@ int main(void) {
     pin_notice="Unsaved session";draw();assert(footer_rects==1);pin_notice=NULL;
     check_units=true;unit_text(10,50,"kg/m^3",Ink,White);check_units=false;
     assert(raised_digits>0 && literal_slashes>0 && unit_rects==0);
-    printf("129 Physics entries match NumWorks v0.1.3; all 8 chapter summaries, links and capacity pass (maximum %d lines). Calculator footer/status and raised-unit/literal-slash checks pass.\n",maxlines);
+    printf("131 Physics entries match NumWorks v0.1.4; all 11 section summaries, links and capacity pass (maximum %d lines). Calculator footer/status and raised-unit/literal-slash checks pass.\n",maxlines);
 }

@@ -1,5 +1,9 @@
 # Next-build queue
 
-v0.1.3-r2 matches the published NumWorks v0.1.3 curriculum and equation content exactly, including Chemistry, and ports the Physics notes, full-height Calculation view and raised-unit formatting. See docs/releases/0.1.3-r2.md.
+The v0.1.4 queue is implemented. See [v0.1.4 release notes](docs/releases/0.1.4.md) for the NumWorks content update, new menu shortcuts, Displayed Formulae library, and Casio palette and filename changes.
 
 Physical Graph Math+ verification remains pending.
+
+## Queued for the next build
+
+No items currently queued.

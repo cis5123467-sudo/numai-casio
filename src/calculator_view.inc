@@ -414,7 +414,8 @@ static void draw_calc_extras(void) {
             calculation_part(fraction,100,frac,16+casio_width(whole,-1,false,false)+3,y+19,Ink,paper,false);
         } else if (box.above+box.below+2<h) calculation_part(row->text,EADK_SCREEN_WIDTH - 40,box,16,mid,Ink,paper,false);
         else clipped(16,y+2,row->text,TEXT_WIDTH,Ink,paper);
-        string_at(16,y+h-15,row->label,Grey,paper);
+        draw_menu_label(i, 16, y+h-15, Blue, paper);
+        string_at(29,y+h-15,row->label,Grey,paper);
         rectangle(8,y+h-1,EADK_SCREEN_WIDTH - 16,1,Line);
         y+=h;
         if (y>=bottom-1) break;

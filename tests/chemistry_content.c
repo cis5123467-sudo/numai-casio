@@ -16,13 +16,15 @@ void casio_text(int x,int y,const char *s,uint16_t a,uint16_t b,bool small,bool 
 void eadk_display_push_rect_uniform(eadk_rect_t r,eadk_color_t c) {(void)r;(void)c;}
 extern const Course pinned_sciences[];
 int main(void) {
-    int retained=0;
+    int retained=0, summaries=0;
     for (int s=0;s<3;s++) {
         const Course *old=&pinned_sciences[s], *now=&courses[s+3];
         assert(old->count==now->count);
         for(int ch=0;ch<old->count;ch++) {
             const Chapter *a=&old->chapters[ch], *b=&now->chapters[ch];
             assert(a->count==b->count);
+            assert(!strcmp(b->topics[0].title,"Key Ideas"));
+            summaries++;
             for(int i=0;i<a->count;i++) {
                 const Topic *before=&a->topics[i], *after=NULL;
                 for(int j=0;j<b->count;j++) if(!strcmp(before->title,b->topics[j].title))after=&b->topics[j];
@@ -34,7 +36,7 @@ int main(void) {
             }
         }
     }
-    assert(retained==151);
+    assert(retained==162 && summaries==34);
     int index=-1;
     for(int i=0;i<course_count;i++) if(!strcmp(courses[i].code,"8462"))index=i;
     assert(index>=0); course_selection=(Selection){index,0};
@@ -56,12 +58,48 @@ int main(void) {
             pages++;
         }
     }
-    assert(pages==151);
+    assert(pages==162);
     chapter_selection=(Selection){3,0}; assert(chapter()->count==18);
     assert(strstr(chapter()->topics[1].course,"CuO + C"));
     assert(strstr(chapter()->topics[2].course,"Aluminium"));
     assert(strstr(chapter()->topics[11].course,"0.0800"));
     page=Search;equation_search=false;
     set_field(&search_query,"chemistry cryolite",false);refresh_search();assert(search_total>0);
-    printf("All 151 Chemistry entries match NumWorks exactly, including notes, examples, labels and chapter order. Reading, links and search pass (maximum %d lines).\n",maxlines);
+    page=CasMenu;
+    assert(handle_key(eadk_key_four,false,false));
+    assert(page==OrganicFamilies);
+    int diagrams=0;
+    for(int f=0;f<organic_family_count;f++) {
+        organic_family=(Selection){f,0};
+        choose();
+        assert(page==OrganicList);
+        for(int i=0;i<organic_families[f].count;i++) {
+            organic_choice=(Selection){i,0};
+            choose();
+            assert(page==OrganicDetail);
+            assert(handle_key(eadk_key_toolbox,false,false));
+            assert(page==Reading && !strcmp(course()->code,"8462"));
+            read_length=0;
+            wrap_topic_reading();
+            bool has_diagram=false;
+            for(int line=0;line<read_length;line++) if(!wrapped[line].source)has_diagram=true;
+            assert(has_diagram);
+            back();
+            assert(page==OrganicDetail);
+            back();
+            diagrams++;
+        }
+        page=OrganicFamilies;
+    }
+    assert(diagrams==18);
+    page=PhysicsList;
+    chemistry_sheet=false;
+    physics_list_selection=(Selection){0};
+    assert(handle_key(eadk_key_zero,false,false));
+    assert(physics_list_selection.row==35);
+    assert(handle_key(eadk_key_zero,false,false));
+    assert(physics_list_selection.row==0);
+    assert(handle_key(eadk_key_xnt,false,true)); /* Casio ALPHA+A: tenth row. */
+    assert(page==PhysicsDetail && physics_selection.row==8);
+    printf("34 first-position Key Ideas pages, all 162 Chemistry entries, 18 formula links, menu shortcuts and search passed. Maximum %d Chemistry lines.\n",maxlines);
 }

@@ -1,0 +1,30 @@
+{
+  "repository": "cis5123467-sudo/numai",
+  "release": "0.1.4",
+  "commit": "2b8dede58f425ac64be7304b2bc9c92097c8789c",
+  "files": {
+    "src/aqa_catalog.inc": "8d259beded1ba33a5f382ee15806b3ce96fa6f613987507a3e3f060e730bd141",
+    "src/maths_details.inc": "a03f6186de9eae328f682ad5dcd202c57512089af27782ff042bdd257724b2da",
+    "src/topics.c": "512d295f761ea892c2f67944f412e00f1d6a57c6b99e221f37e1830ad8177d61",
+    "src/chemistry.c": "4c64bed5ce785f004c1397de02c4062486f9a542ad28a2430899523c197c6050",
+    "src/organic.c": "fa9e1a457f73af2a5b2b24936711fba7f7cbed2f20052b13021512bf383e2ecf",
+    "src/organic.h": "28826676b65fb22e8259f161089a07f6da23829cd275fb6c101b39979f8d1e4f",
+    "src/physics.h": "756ae9b75780df3f92882fbe14311fd0a27479e3a55e5f9c1c371bdd96f68b9f",
+    "src/units.h": "f9ac3cb1a852b6122bdab14187697fd88b0cafa3c1004531aab2818ede3fe795"
+  },
+  "git_blobs": {
+    "src/aqa_catalog.inc": "49ee4da54fcaa4fa4791f54e4847e79d5fd0344f",
+    "src/maths_details.inc": "002f8d698b624f4f6c71f8429264b7392253ce89",
+    "src/topics.c": "d33ddffac627a46842ec39b6e41d8c5efba2d446",
+    "src/chemistry.c": "6760b19be4627bf3dd057687543c3388f6524bc3",
+    "src/organic.c": "7b6331e741a9bfeb2b2e8d24ad9a8b8e80b4d4ce",
+    "src/organic.h": "fef793bc04be8138be35565dd93aa6a111d1c29e",
+    "src/physics.h": "9c418dcb5ffb9c7d0eeb242e821eaf24fd67580a",
+    "src/units.h": "c94664d13eb0a322fc276cffe6afe076550d9064"
+  },
+  "flattened_includes": {
+    "src/topics.h": "99fcb2317cf9f8a64955da54508050d446aa8513",
+    "src/physics.c": "1799a6e2b0e8f63a4d603e4c061a2c9a62031af6",
+    "src/units.c": "ff72f5e7a2f0255519f91c8847e22969622168aa"
+  }
+}

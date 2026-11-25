@@ -2,7 +2,7 @@
 #include "topics.h"
 #define COUNT(a) ((int)(sizeof(a)/sizeof(*(a))))
 #define CH(t,a) {t,a,COUNT(a)}
-#include "../data/aqa_catalog_numworks_0.1.3.inc"
+#include "../data/aqa_catalog_numworks_0.1.4.inc"
 const Course pinned_sciences[] = {
     {"AQA Physics","8463",aqa_physics,COUNT(aqa_physics)},
     {"AQA Biology","8461",aqa_biology,COUNT(aqa_biology)},
