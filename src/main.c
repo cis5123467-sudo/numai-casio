@@ -64,6 +64,7 @@ typedef struct {
 typedef struct {
     int length;
     bool highlight;
+    bool higher;
     const char *source;
 } WrappedLine;
 typedef enum { TrigSolver, TriangleSolver, PhysicsRearrange, ExtraToolCount } ExtraTool;
@@ -299,8 +300,8 @@ static void title_with_tier(int x, int y, const char *title, int columns,
         snprintf(base, sizeof(base), "%.*s", (int)(suffix-title), title);
         int tail = casio_width(higher_label, -1, false, false);
         fit_text(visible, base, EADK_SCREEN_WIDTH - x - tail - 14, columns);
-        string_at(x, y, visible, ink, paper);
-        string_at(x + casio_width(visible,-1,false,false) + 6, y, higher_label, ink, paper);
+        draw_text(x, y, visible, ink, paper, false);
+        draw_text(x + casio_width(visible, -1, false, false) + 6, y, higher_label, ink, paper, false);
     } else clipped(x, y, title, columns, ink, paper);
 }
 
@@ -382,7 +383,7 @@ static void wrap(const char *text, int width, bool highlight, int *count) {
             while (previous > 0 && start[previous] != ' ') previous--;
             length = previous ? previous : length - 1;
         }
-        wrapped[(*count)++] = (WrappedLine){length, highlight, start};
+        wrapped[(*count)++] = (WrappedLine){.length=length,.highlight=highlight,.source=start};
         text = start + length;
         if (*text == '\n') text++;
         else while (*text == ' ') text++;
@@ -557,7 +558,13 @@ static const char *selection_text(Page menu, int i) {
         case Toolbox: return i == 0 ? "Favourites" : i == 1 ? "Search topics" : courses[i - 2].title;
         case OrganicFamilies: return organic_families[i].name;
         case OrganicList: return organic_molecules[organic_families[organic_family.row].first + i].name;
-        case RelatedEquations: return match_title(&related_matches[i]);
+        case RelatedEquations: {
+            const SearchMatch *match = &related_matches[i];
+            if (!match->equation || !match_equation(match)->higher) return match_title(match);
+            static char title[80];
+            snprintf(title, sizeof(title), "%s %s", match_title(match), higher_label);
+            return title;
+        }
         case GeneralMenu: return general_items[i];
         case SessionList: {
             static char label[SESSION_NAME_SIZE + 3];
@@ -1594,6 +1601,17 @@ static const char cas_help[] =
     "Indefinite integrals cover polynomials and selected elementary functions. Definite integrals accept polynomials.\n"
     "Numeric functions include ncr(n,r), npr(n,r), binom(n,r,p), and norm(z).";
 
+static void restore_related_reading(void) {
+    page = related_parent;
+    read_content = related_read_content;
+    read_title = related_read_title;
+    reading_parent = related_reading_parent;
+    read_offset = related_read_offset;
+    course_selection = (Selection){related_topic.course,0};
+    chapter_selection = (Selection){related_topic.chapter,0};
+    topic_selection = (Selection){related_topic.row,0};
+}
+
 static void back(void) {
     switch (page) {
         case Toolbox: page = toolbox_parent; break;
@@ -1613,7 +1631,9 @@ static void back(void) {
         case Examples: page = TopicMenu; break;
         case PhysicsList: page = CasMenu; break;
         case PhysicsDetail:
-            page = favourite_origin ? Favourites : equation_parent;
+            if (!favourite_origin && equation_from_related && is_key_ideas(related_read_title))
+                restore_related_reading();
+            else page = favourite_origin ? Favourites : equation_parent;
             favourite_origin = false;
             break;
         case PhysicsSubjects: page = PhysicsDetail; break;
@@ -1641,16 +1661,7 @@ static void back(void) {
         case Reading: page = reading_parent; break;
         case Search: page = search_parent; break;
         case RelatedEquations:
-            page = related_parent;
-            if (page == Reading) {
-                read_content = related_read_content;
-                read_title = related_read_title;
-                reading_parent = related_reading_parent;
-                read_offset = related_read_offset;
-                course_selection = (Selection){related_topic.course,0};
-                chapter_selection = (Selection){related_topic.chapter,0};
-                topic_selection = (Selection){related_topic.row,0};
-            }
+            restore_related_reading();
             break;
         default: break;
     }

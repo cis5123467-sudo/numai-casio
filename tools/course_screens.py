@@ -23,7 +23,7 @@ for i,name in enumerate(names):
     body=re.search(r'static const Topic '+name+r'\[\] = \{(.*?)\n\};',source,re.S)[1]
     count=len(re.findall(r'\b[SHK]\(',body));cases.append((i,name,count))
 assert sum(n for i,name,n in cases)==expected
-base=root/f'verification/{subject}-parity-v0.1.4';base.mkdir(parents=True,exist_ok=True)
+base=root/f'verification/{subject}-parity-v0.1.4-r1';base.mkdir(parents=True,exist_ok=True)
 emulator=os.environ.get('CASIO_EMULATOR','/tmp/numplay-toolchain/emu-build/emucasiocalc')
 def test(item):
     chapter,name,count=item;folder=base/name;folder.mkdir(exist_ok=True)
@@ -34,7 +34,7 @@ def test(item):
             script+=f'EXE, wait 0.6s, shot {row:02}-notes.png, '+'DOWN, '*6+f'wait 0.4s, shot {row:02}-scroll.png, EXIT, DOWN, '
         script+='MENU'
         script=re.sub(r'\b(SHIFT|EXE|EXIT|DOWN),',r'\1, wait 0.8s,',script)
-        p=subprocess.run([emulator,'--headless','--model','cg50','--keys',script,root/'release/numai-casio-v0.1.4.g3a'],cwd=batch,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=180)
+        p=subprocess.run([emulator,'--headless','--model','cg50','--keys',script,root/'release/numai-casio-v0.1.4-r1.g3a'],cwd=batch,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=180)
         (batch/'run.log').write_text(p.stdout)
         assert p.returncode==0 and 'add-in exited after' in p.stdout and 'stopped with an error' not in p.stdout,p.stdout
         for image in batch.glob('*.png'):(folder/image.name).write_bytes(image.read_bytes())

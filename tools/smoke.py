@@ -10,7 +10,7 @@ from PIL import Image, ImageChops
 
 root = Path(__file__).resolve().parents[1]
 emulator = Path(os.environ.get("CASIO_EMULATOR", "/tmp/numplay-toolchain/emu-build/emucasiocalc"))
-addin = root / "release/numai-casio-v0.1.4.g3a"
+addin = root / "release/numai-casio-v0.1.4-r1.g3a"
 
 def run(folder, script):
     folder.mkdir(parents=True, exist_ok=True)

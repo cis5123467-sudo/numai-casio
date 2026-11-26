@@ -6,13 +6,13 @@ import os
 import subprocess
 from PIL import Image
 root=Path(__file__).resolve().parents[1]
-base=root/'verification/ui-v0.1.4';base.mkdir(parents=True,exist_ok=True)
+base=root/'verification/ui-v0.1.4-r1';base.mkdir(parents=True,exist_ok=True)
 emulator=os.environ.get('CASIO_EMULATOR','/tmp/numplay-toolchain/emu-build/emucasiocalc')
 def run(name,script):
     folder=base/name;folder.mkdir(exist_ok=True)
     for file in ['numai.sav','numai.bak','numai.tmp']:
         (folder/'storage/fls0'/file).unlink(missing_ok=True)
-    p=subprocess.run([emulator,'--headless','--model','cg50','--keys','scale 1, wait 0.7s, '+script.replace('shot ','wait 0.5s, shot '),root/'release/numai-casio-v0.1.4.g3a'],cwd=folder,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=90)
+    p=subprocess.run([emulator,'--headless','--model','cg50','--keys','scale 1, wait 0.7s, '+script.replace('shot ','wait 0.5s, shot '),root/'release/numai-casio-v0.1.4-r1.g3a'],cwd=folder,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=90)
     (folder/'run.log').write_text(p.stdout)
     assert p.returncode==0 and 'add-in exited after' in p.stdout and 'stopped with an error' not in p.stdout,p.stdout
     return folder

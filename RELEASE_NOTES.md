@@ -1,3 +1,21 @@
+# NumAI Casio v0.1.4-r1
+
+This revision matches the Key Ideas equation links in NumWorks NumAI v0.1.4-r1, commit `4401c2fd1288f9dd040134964be3136ac9774376`.
+
+- Key Ideas pages in AQA Biology, Chemistry and Physics list the relevant equation fact sheets below the specification reference. They include equations from across the chapter and cross-topic links, such as magnification for Biology Cell Biology, ideal transformer power for Physics Electricity, and titration and concentration for Chemistry Chemical Changes. Required practical summaries also link to relevant calculations.
+- Press **TOOLS** from a summary to open the list, or go straight to the fact sheet when there is one link. Higher-only labels appear on the summary, the list and the fact sheet.
+- Press **BACK** from a fact sheet to return directly to the summary at the original scroll position. The existing subsection links and navigation remain available.
+
+Copy `numai-casio-v0.1.4-r1.g3a` to the root of your Graph Math+ USB storage, eject safely, and open NumAI from the MPM TOOLS add-ins menu. The target is Graph Math+ OS 02.00.2202 with MPM. Existing saves remain compatible.
+
+## Validation
+
+Host checks traversed all 109 links across the 34 Key Ideas pages, including 29 Higher-only links, and confirmed that each fact sheet opened and returned to the original summary and scroll offset. Emulator checks on the packaged G3A covered direct and list-based links, pixel-identical scroll restoration, equation search, subsection links, History reuse, saves, and calculator rendering. Package and icon checks passed. Physical Graph Math+ testing is pending.
+
+SHA-256 `cb258167ebe1a7697a5792bad3fe93b36fe87c617a5b72969c5b25f3d73a1c6d`
+
+---
+
 # NumAI Casio v0.1.4
 
 For **Casio Graph Math+ on OS 02.00.2202 with Math+ Mod (MPM)**. Copy `numai-casio-v0.1.4.g3a` to the root of USB storage, eject the calculator, and open NumAI through MPM's TOOLS add-ins menu. Keep `numai.sav` and `numai.bak` to retain existing sessions.

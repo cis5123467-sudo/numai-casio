@@ -6,7 +6,7 @@ import hashlib
 from PIL import Image
 from elftools.elf.elffile import ELFFile
 root = Path(__file__).resolve().parents[1]
-path = root/'release/numai-casio-v0.1.4.g3a'
+path = root/'release/numai-casio-v0.1.4-r1.g3a'
 raw = path.read_bytes()
 assert bytes(x^255 for x in raw[:8])==b'USBPower'
 assert int.from_bytes(bytes(x^255 for x in raw[16:20]),'big')==len(raw)

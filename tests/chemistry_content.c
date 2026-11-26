@@ -15,6 +15,65 @@ int casio_width(const char *s,int n,bool small,bool bold) {
 void casio_text(int x,int y,const char *s,uint16_t a,uint16_t b,bool small,bool large,bool bold) {(void)x;(void)y;(void)s;(void)a;(void)b;(void)small;(void)large;(void)bold;}
 void eadk_display_push_rect_uniform(eadk_rect_t r,eadk_color_t c) {(void)r;(void)c;}
 extern const Course pinned_sciences[];
+static void check_summary_links(void) {
+    int summaries = 0, links = 0, higher = 0, single = 0, multiple = 0;
+    for (int course_index = 3; course_index < 6; course_index++) {
+        course_selection = (Selection){course_index, 0};
+        for (int chapter_index = 0; chapter_index < course()->count; chapter_index++) {
+            chapter_selection = (Selection){chapter_index, 0};
+            topic_selection = (Selection){0};
+            page = Topics;
+            choose();
+            const Topic *summary = topic();
+            assert(page == Reading && is_key_ideas(read_title));
+            wrap_topic_reading();
+            SearchMatch expected[SEARCH_LIMIT];
+            int count = related_count, tagged = 0, heading = 0;
+            memcpy(expected, related_matches, (size_t)count * sizeof(*expected));
+            for (int line = 0; line < read_length; line++) {
+                const WrappedLine *entry = &wrapped[line];
+                if (entry->higher) tagged++;
+                if (entry->source && !strncmp(entry->source, "Related equations (TOOLS)", 25)) heading++;
+            }
+            assert(heading == (count > 0));
+            assert(read_length < WRAP_LIMIT);
+            int marked = 0;
+            handle_key(eadk_key_down, false, false);
+            int offset = read_offset;
+            for (int row = 0; row < count; row++) {
+                const SearchMatch *match = &expected[row];
+                const PhysicsEquation *target = match_equation(match);
+                for (int previous = 0; previous < row; previous++)
+                    assert(expected[previous].chemistry != match->chemistry || expected[previous].row != match->row);
+                handle_key(eadk_key_var, false, false);
+                if (count > 1) {
+                    assert(page == RelatedEquations);
+                    assert(!!higher_suffix(selection_text(page, row)) == target->higher);
+                    related_selection.row = row;
+                    handle_key(eadk_key_ok, false, false);
+                }
+                assert(page == PhysicsDetail && equation() == target);
+                marked += target->higher;
+                handle_key(eadk_key_back, false, false);
+                assert(page == Reading && topic() == summary && read_content == summary->course);
+                assert(reading_parent == Topics && read_offset == offset);
+            }
+            assert(tagged == marked);
+            if (count > 1) {
+                handle_key(eadk_key_var, false, false);
+                handle_key(eadk_key_back, false, false);
+                assert(page == Reading && read_content == summary->course && read_offset == offset);
+                multiple++;
+            } else if (count == 1) single++;
+            higher += marked;
+            links += count;
+            summaries++;
+        }
+    }
+    assert(summaries == 34 && links == 109 && higher == 29 && single && multiple);
+    puts("All 109 links across 34 Key Ideas pages opened the intended fact sheet and restored the summary and its scroll position (29 Higher-only).");
+}
+
 int main(void) {
     int retained=0, summaries=0;
     for (int s=0;s<3;s++) {
@@ -101,5 +160,6 @@ int main(void) {
     assert(physics_list_selection.row==0);
     assert(handle_key(eadk_key_xnt,false,true)); /* Casio ALPHA+A: tenth row. */
     assert(page==PhysicsDetail && physics_selection.row==8);
+    check_summary_links();
     printf("34 first-position Key Ideas pages, all 162 Chemistry entries, 18 formula links, menu shortcuts and search passed. Maximum %d Chemistry lines.\n",maxlines);
 }

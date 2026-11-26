@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exercise the new v0.1.4 menu shortcuts and organic diagrams in the G3A."""
+"""Exercise the new v0.1.4 menu shortcuts, organic diagrams and summary equation links in the G3A."""
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 import os
@@ -8,9 +8,9 @@ import subprocess
 from PIL import Image
 
 root = Path(__file__).resolve().parents[1]
-output = root / "verification/v0.1.4"
+output = root / "verification/v0.1.4-r1"
 emulator = os.environ.get("CASIO_EMULATOR", "/tmp/numplay-toolchain/emu-build/emucasiocalc")
-addin = root / "release/numai-casio-v0.1.4.g3a"
+addin = root / "release/numai-casio-v0.1.4-r1.g3a"
 
 
 def run(name, keys):
@@ -63,9 +63,29 @@ def shortcuts():
                 ("courses", "physics", "alpha-a", "second-group", "group-entry")}) == 5
 
 
+def summary_links():
+    for name, course, chapter, first_equation in (
+        ("biology-cell-biology", 7, 1, ()),
+        ("chemistry-chemical-changes", 8, 4, ("1",)),
+        ("physics-electricity", 6, 2, ("1",)),
+    ):
+        keys = ["SHIFT", "EXE", "1", str(course), str(chapter), "1",
+                "wait 0.4s", "shot summary.png", "DOWN", "DOWN", "wait 0.4s",
+                "shot scrolled.png", "OPTN", "wait 0.4s", "shot links.png",
+                *first_equation, "wait 0.4s", "shot fact.png", "EXIT", "wait 0.4s",
+                "shot returned.png"]
+        folder = run(name, keys)
+        assert screen(folder, "summary").tobytes() != screen(folder, "scrolled").tobytes(), name
+        assert screen(folder, "scrolled").tobytes() == screen(folder, "returned").tobytes(), name
+        assert screen(folder, "fact").tobytes() != screen(folder, "returned").tobytes(), name
+        assert (screen(folder, "links").tobytes() != screen(folder, "fact").tobytes()) == bool(first_equation), name
+
+
 if __name__ == "__main__":
     with ThreadPoolExecutor(max_workers=3) as pool:
         shortcuts_result = pool.submit(shortcuts)
+        links_result = pool.submit(summary_links)
         list(pool.map(family, enumerate((5, 4, 4, 4, 1), 1)))
         shortcuts_result.result()
-    print("All 18 molecule diagrams and linked notes, menu shortcuts and yellow-gold header passed.")
+        links_result.result()
+    print("All 18 molecule diagrams and linked notes, menu shortcuts, yellow-gold header and summary equation navigation passed.")

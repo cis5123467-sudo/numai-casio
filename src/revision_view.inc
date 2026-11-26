@@ -179,6 +179,7 @@ static void wrapped_text(int row, char text[TEXT_WIDTH + 1]) {
 
 static MathBox measure_wrapped_line(int row) {
     if (!wrapped[row].source) return (MathBox){EADK_SCREEN_WIDTH - 12, OrganicDiagramHeight - 2, 0};
+    if (wrapped[row].higher) return (MathBox){EADK_SCREEN_WIDTH - 12, 7, 7};
     char text[TEXT_WIDTH + 1];
     wrapped_text(row, text);
     return revision_line(text, 0, 0, Ink, White, false);
@@ -189,6 +190,12 @@ static void draw_wrapped_line(int row, int y, MathBox box) {
     if (!line->source) {
         if (line->length == OrganicIsomerComparison) draw_organic_comparison(y);
         else draw_organic_diagram(&organic_molecules[line->length], y, White);
+        return;
+    }
+    if (line->higher) {
+        char title[80];
+        snprintf(title, sizeof(title), "%s %s", line->source, higher_label);
+        title_with_tier(11, y + 1, title, TEXT_WIDTH, Ink, White);
         return;
     }
     char text[TEXT_WIDTH + 1];

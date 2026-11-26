@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build NumAI 0.1.4 for Graph Math+ with the installed fxSDK/gint toolchain."""
+"""Build NumAI 0.1.4-r1 for Graph Math+ with the installed fxSDK/gint toolchain."""
 from pathlib import Path
 import os
 import subprocess
@@ -25,7 +25,7 @@ for source in sorted((root / "src").glob("*.c")):
     output = build / (source.stem + ".o")
     run(["sh-elf-gcc", "-m4-nofpu", "-mb", "-nostdlib", "-fno-builtin", "-Os", "-std=gnu11",
          "-fdata-sections", "-ffunction-sections", "-fno-common", "-Wall", "-Wextra",
-         "-DFXCG50", "-DPLATFORM_DEVICE=1", '-DNUMAI_VERSION="0.1.4"',
+         "-DFXCG50", "-DPLATFORM_DEVICE=1", '-DNUMAI_VERSION="0.1.4-r1"',
          '-DNUMAI_FXCG100=' + ('1' if os.environ.get('NUMAI_MODEL') == 'fxcg100' else '0'),
          "-isystem", include, "-I", root / "src", "-c", source, "-o", output])
     objects.append(output)
@@ -42,8 +42,8 @@ for selected, colour in [(False, "#ffffff"), (True, "#ffb52b")]:
     icon.alpha_composite(logo, ((92-logo.width)//2, (44-logo.height)//2))
     icon.convert("RGB").save(build / ("selected.png" if selected else "icon.png"))
 (root / "release").mkdir(exist_ok=True)
-release = root / "release/numai-casio-v0.1.4.g3a"
-run(["fxgxa", "--g3a", "--name=NumAI", "--internal=@NUMAI", "--version=00.01.0400",
+release = root / "release/numai-casio-v0.1.4-r1.g3a"
+run(["fxgxa", "--g3a", "--name=NumAI", "--internal=@NUMAI", "--version=00.01.0401",
      "--icon-uns=" + str(build / "icon.png"), "--icon-sel=" + str(build / "selected.png"),
      "-o", release, raw])
 print(f"{release} — {release.stat().st_size:,} bytes")
